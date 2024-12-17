@@ -1,0 +1,47 @@
+from flask import Flask, jsonify
+import mysql.connector
+from mysql.connector import Error
+
+app = Flask(__name__)
+
+# Détails de connexion à ta base de données (en utilisant les informations de ton .env)
+DB_HOST = "127.0.0.1"  # Adresse du serveur
+DB_PORT = "8889"  # Port de connexion
+DB_USER = "herbier"  # Utilisateur
+DB_PASSWORD = "epsi"  # Mot de passe
+DB_NAME = "ubeer"  # Nom de la base de données
+DB_CHARSET = "utf8mb4"  # Charset
+DB_SERVER_VERSION = "5.7.39-MySQL"  # Version du serveur
+
+# Fonction pour récupérer les tables de la base de données
+def get_tables():
+    connection = None  # Initialisation de la variable connection à None
+    try:
+        connection = mysql.connector.connect(
+            host=DB_HOST,
+            port=DB_PORT,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            database=DB_NAME,
+            charset=DB_CHARSET
+        )
+        if connection.is_connected():
+            cursor = connection.cursor()
+            cursor.execute("SHOW TABLES")
+            tables = cursor.fetchall()
+            return [table[0] for table in tables]  # Retourner une liste de noms de tables
+    except Error as e:
+        return f"Erreur de connexion à la base de données: {e}"
+    finally:
+        if connection is not None and connection.is_connected():
+            cursor.close()
+            connection.close()
+
+# Route pour afficher les tables
+@app.route('/tables', methods=['GET'])
+def tables():
+    tables = get_tables()
+    return jsonify(tables)
+
+if __name__ == '__main__':
+    app.run(debug=True)

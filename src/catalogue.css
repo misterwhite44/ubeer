@@ -1,0 +1,74 @@
+.catalogue-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .beer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .beer-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .beer-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .beer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    margin: 0.5rem 0;
+    color: #000;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .beer-price {
+    font-weight: bold;
+    color: #6ab04c; /* Vert Uber Eats */
+    margin-top: 0.5rem;
+  }
+  
+  .order-button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #6ab04c; /* Vert Uber Eats */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .order-button:hover {
+    background-color: #4b8c38; /* Vert foncé */
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  

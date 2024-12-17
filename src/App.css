@@ -1,17 +1,18 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #f8f8f8; /* Gris clair pour le fond */
+  color: #333; /* Gris foncé pour le texte */
 }
 
 .app {
   text-align: center;
 }
 
+/* Header */
 .header {
-  background-color: #222;
-  color: #fff;
+  background-color: #000; /* Noir */
+  color: #fff; /* Blanc */
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -22,46 +23,74 @@ body {
   list-style: none;
   display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .header a {
-  color: #fff;
+  color: #fff; /* Blanc */
   text-decoration: none;
+  font-weight: bold;
 }
 
+.header a:hover {
+  color: #6ab04c; /* Vert Uber Eats */
+}
+
+/* Hero Section */
 .hero {
   background: url("https://source.unsplash.com/1600x900/?beer") no-repeat center center/cover;
-  color: white;
+  color: #fff; /* Blanc */
   padding: 5rem 1rem;
 }
 
 .hero h2 {
   font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .cta-button {
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
-  background-color: #f39c12;
+  background-color: #6ab04c; /* Vert Uber Eats */
   border: none;
-  color: white;
+  color: #fff; /* Blanc */
   cursor: pointer;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .cta-button:hover {
-  background-color: #e67e22;
+  background-color: #4b8c38; /* Vert plus foncé */
 }
 
+/* About Section */
 .about {
   padding: 2rem 1rem;
-  background-color: #fff;
+  background-color: #fff; /* Blanc */
+  color: #333; /* Gris foncé */
 }
 
+.about h3 {
+  color: #000; /* Noir */
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
 .footer {
-  background-color: #222;
-  color: white;
+  background-color: #000; /* Noir */
+  color: #fff; /* Blanc */
   padding: 1rem;
   font-size: 0.9rem;
 }

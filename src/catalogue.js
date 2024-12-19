@@ -10,11 +10,11 @@ function Catalogue() {
   useEffect(() => {
     const fetchBeers = async () => {
       try {
-        const response = await fetch("https://api.example.com/beers"); // Remplace par ton URL API
+        const response = await fetch("http://127.0.0.1:5000/beers/"); // URL de ton API Flask
         if (!response.ok) throw new Error("Erreur lors du chargement des bières.");
-        
+
         const data = await response.json();
-        setBeers(data); // Mettre à jour les bières
+        setBeers(data); // Met à jour la liste des bières
       } catch (err) {
         setError(err.message);
       } finally {
@@ -35,10 +35,11 @@ function Catalogue() {
       <div className="beer-grid">
         {beers.map((beer) => (
           <div key={beer.id} className="beer-card">
-            <img src={beer.image_url} alt={beer.name} className="beer-image" />
             <h3>{beer.name}</h3>
-            <p>{beer.description}</p>
-            <p className="beer-price">{beer.price}€</p>
+            <p>Type : {beer.type}</p>
+            <p>Brasserie : {beer.brewery}</p>
+            <p>Quantité : {beer.quantity}</p>
+            <p>Taux d'alcool : {beer.abv}%</p>
             <button className="order-button">Commander</button>
           </div>
         ))}

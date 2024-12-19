@@ -3,6 +3,8 @@ from flask_restx import Api, Resource, fields
 from flask_cors import CORS
 import mysql.connector
 from mysql.connector import Error
+from werkzeug.security import generate_password_hash
+import hashlib
 
 app = Flask(__name__)
 
@@ -15,6 +17,7 @@ api = Api(app, version='1.0', title='Ubeers API',
 
 ns_beers = api.namespace('beers', description='Beer Operations')
 ns_breweries = api.namespace('breweries', description='Brewery Operations')
+ns_users = api.namespace('users', description='User Operations')
 
 # Database configuration
 DB_HOST = "127.0.0.1"
@@ -40,6 +43,15 @@ brewery_model = api.model('Brewery', {
     'description': fields.String(description='Description of the brewery'),
     'location': fields.String(description='Location of the brewery'),
     'image_url': fields.String(description='Image URL of the brewery')
+})
+
+# User model for Swagger
+user_model = api.model('User', {
+    'pseudo': fields.String(required=True, description='Pseudo of the user'),
+    'email': fields.String(required=True, description='Email of the user'),
+    'password': fields.String(required=True, description='Password of the user'),
+    'address': fields.String(description='Address of the user'),
+    'phone_number': fields.String(description='Phone number of the user'),
 })
 
 def get_db_connection():
@@ -234,6 +246,76 @@ class Brewery(Resource):
             if connection.is_connected():
                 cursor.close()
                 connection.close()
+
+# Modification de l'endpoint pour ne pas hacher le mot de passe
+@ns_users.route('/')
+class UsersList(Resource):
+    @ns_users.doc('add_user')
+    @ns_users.expect(user_model)
+    def post(self):
+        """
+        Register a new user in the database without hashing the password
+        """
+        data = request.json
+        
+        # Validation de l'email
+        email = data['email']
+        if not email:
+            return {'error': 'Email is required'}, 400
+        
+        # On ne hash pas le mot de passe ici
+        password = data['password']
+        
+        # Récupère les autres champs
+        pseudo = data['pseudo']
+        address = data.get('address', '')
+        phone_number = data.get('phone_number', '')
+        
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            
+            # Insert into users table without hashing the password
+            cursor.execute(
+                "INSERT INTO users (pseudo, email, password, address, phone_number) VALUES (%s, %s, %s, %s, %s)",
+                (pseudo, email, password, address, phone_number)
+            )
+            connection.commit()
+            
+            return {'message': 'User registered successfully'}, 201
+        
+        except Error as e:
+            return {'error': str(e)}, 500
+        
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+
+@ns_users.route('/<int:user_id>')
+class User(Resource):
+    @ns_users.doc('get_user')
+    def get(self, user_id):
+        """
+        Fetch a user by its ID
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+            user = cursor.fetchone()
+            if user:
+                return jsonify(user)
+            else:
+                return {'message': 'User not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
 
 if __name__ == '__main__':
     app.run(debug=True)

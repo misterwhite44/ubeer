@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./breweries.css"; // Assure-toi de créer ce fichier pour le style
+import "./css/breweries.css"; // Assure-toi de créer ce fichier pour le style
 
 function Breweries() {
   const [breweries, setBreweries] = useState([]); // Stockage des brasseries

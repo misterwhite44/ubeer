@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./catalogue.css";
+import "./css/catalogue.css";
 
 function Catalogue() {
   const [beers, setBeers] = useState([]); // Stockage des bières

@@ -14,6 +14,9 @@ function Header() {
           <li>
             <Link to="/catalogue">Catalogue</Link>
           </li>
+          <li>
+            <Link to="/breweries">Brasseries</Link> {/* Nouveau bouton pour Brasseries */}
+          </li>
         </ul>
       </nav>
     </header>

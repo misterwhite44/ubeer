@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./header";
 import Footer from "./footer";
 import Catalogue from "./catalogue";
+import Breweries from "./breweries"; // Assurez-vous d'importer Breweries ici
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
 
           {/* Page Catalogue */}
           <Route path="/catalogue" element={<Catalogue />} />
+
+          {/* Page Breweries */}
+          <Route path="/breweries" element={<Breweries />} /> {/* Ajouter la route pour Breweries */}
         </Routes>
 
         <Footer />

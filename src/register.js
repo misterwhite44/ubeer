@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 import "./css/login.css";
 
 function Register() {
-  const [pseudo, setPseudo] = useState(""); // Etat pour le pseudo
+  const [pseudo, setPseudo] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [address, setAddress] = useState(""); // Etat pour l'adresse
-  const [phoneNumber, setPhoneNumber] = useState(""); // Etat pour le numéro de téléphone
+  const [address, setAddress] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false); // Ajout d'un état pour le chargement
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -28,7 +29,8 @@ function Register() {
       phone_number: phoneNumber,
     };
 
-    console.log("Données envoyées à l'API :", requestData); // Debugging des données
+    setIsLoading(true); // Active le chargement
+    setError(null); // Réinitialise les erreurs
 
     try {
       const response = await fetch("http://127.0.0.1:5000/users", {
@@ -39,22 +41,24 @@ function Register() {
         body: JSON.stringify(requestData),
       });
 
-      // Vérification de la réponse
       if (!response.ok) {
-        throw new Error("Inscription échouée");
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Inscription échouée.");
       }
 
       const data = await response.json();
-      console.log("Réponse de l'API :", data); // Debugging de la réponse de l'API
+      console.log("Réponse de l'API :", data);
 
       if (data.message === "Utilisateur créé avec succès") {
-        navigate("/login"); // Redirige vers la page de connexion
+        navigate("/login");
       } else {
         setError(data.error || "Une erreur est survenue.");
       }
     } catch (err) {
-      console.error("Erreur lors de la soumission :", err); // Affiche l'erreur dans la console
-      setError("Une erreur est survenue. Veuillez réessayer.");
+      console.error("Erreur lors de la soumission :", err);
+      setError(err.message || "Une erreur est survenue. Veuillez réessayer.");
+    } finally {
+      setIsLoading(false); // Désactive le chargement
     }
   };
 
@@ -115,11 +119,14 @@ function Register() {
             onChange={(e) => setAddress(e.target.value)}
           />
         </label>
-        <button type="submit">S'inscrire</button>
+        <button type="submit" disabled={isLoading}>
+          {isLoading ? "Inscription en cours..." : "S'inscrire"}
+        </button>
       </form>
-      {/* Lien vers la page de connexion si l'utilisateur a déjà un compte */}
       <div className="login-link">
-        <p>Vous avez déjà un compte ? <a href="/login">Se connecter</a></p>
+        <p>
+          Vous avez déjà un compte ? <a href="/login">Se connecter</a>
+        </p>
       </div>
     </div>
   );

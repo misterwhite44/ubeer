@@ -3,18 +3,27 @@ import "./css/catalogue.css";
 
 function Catalogue() {
   const [beers, setBeers] = useState([]); // Stockage des bières
+  const [breweries, setBreweries] = useState([]); // Stockage des brasseries
+  const [selectedBrewery, setSelectedBrewery] = useState(""); // Brasserie sélectionnée
   const [loading, setLoading] = useState(true); // Indicateur de chargement
   const [error, setError] = useState(null); // Gestion des erreurs
 
-  // Appel API pour récupérer les bières
+  // Appel API pour récupérer les bières et les brasseries
   useEffect(() => {
-    const fetchBeers = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/beers/"); // URL de ton API Flask
-        if (!response.ok) throw new Error("Erreur lors du chargement des bières.");
+        const beerResponse = await fetch("http://127.0.0.1:5000/beers/");
+        const breweryResponse = await fetch("http://127.0.0.1:5000/breweries/");
+        
+        if (!beerResponse.ok || !breweryResponse.ok) {
+          throw new Error("Erreur lors du chargement des données.");
+        }
 
-        const data = await response.json();
-        setBeers(data); // Met à jour la liste des bières
+        const beerData = await beerResponse.json();
+        const breweryData = await breweryResponse.json();
+
+        setBeers(beerData);
+        setBreweries(breweryData);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -22,8 +31,18 @@ function Catalogue() {
       }
     };
 
-    fetchBeers();
+    fetchData();
   }, []);
+
+  // Gestion du changement de brasserie sélectionnée
+  const handleBreweryChange = (e) => {
+    setSelectedBrewery(e.target.value);
+  };
+
+  // Filtrer les bières par brasserie
+  const filteredBeers = selectedBrewery
+    ? beers.filter((beer) => beer.brewery_id === parseInt(selectedBrewery))
+    : beers;
 
   return (
     <div className="catalogue-container">
@@ -31,9 +50,26 @@ function Catalogue() {
       {loading && <p>Chargement en cours...</p>}
       {error && <p className="error">{error}</p>}
 
+      {/* Menu déroulant pour sélectionner une brasserie */}
+      <div className="filter-container">
+        <label htmlFor="brewery-select">Filtrer par brasserie :</label>
+        <select
+          id="brewery-select"
+          value={selectedBrewery}
+          onChange={handleBreweryChange}
+        >
+          <option value="">Toutes les brasseries</option>
+          {breweries.map((brewery) => (
+            <option key={brewery.id} value={brewery.id}>
+              {brewery.name}
+            </option>
+          ))}
+        </select>
+      </div>
+
       {/* Affichage des bières */}
       <div className="beer-grid">
-        {beers.map((beer) => (
+        {filteredBeers.map((beer) => (
           <div key={beer.id} className="beer-card">
             <h3>{beer.name}</h3>
             {beer.image_url && (

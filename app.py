@@ -1,23 +1,25 @@
 from flask import Flask, jsonify, request
 from flask_restx import Api, Resource, fields
+from flask_cors import CORS
 import mysql.connector
 from mysql.connector import Error
+from werkzeug.security import generate_password_hash
+import hashlib
 
 app = Flask(__name__)
 
-# Configuration de l'API Swagger
-api = Api(app, version='1.0', title='API Ubeers',
-          description='API to Fetch Data')
+# Activer CORS
+CORS(app, resources={r"/*": {"origins": "*"}})
 
-ns = api.namespace('Tables', description='Operations')
+# Swagger API configuration
+api = Api(app, version='1.0', title='Ubeers API',
+          description='API for managing beers, breweries, deliveries, and users')
 
-table_model = api.model('Table', {
-    'nom': fields.String(required=True, description='Nom de la table'),
-    'type': fields.String(description='Type de la table'),
-    'quantite': fields.Integer(description='Quantité disponible'),
-    'emplacement': fields.String(description='Emplacement de la table'),
-})
+ns_beers = api.namespace('beers', description='Beer Operations')
+ns_breweries = api.namespace('breweries', description='Brewery Operations')
+ns_users = api.namespace('users', description='User Operations')
 
+# Database configuration
 DB_HOST = "127.0.0.1"
 DB_PORT = "8889"
 DB_USER = "herbier"
@@ -25,64 +27,295 @@ DB_PASSWORD = "epsi"
 DB_NAME = "ubeer"
 DB_CHARSET = "utf8mb4"
 
-# Fonction pour récupérer les tables de la base de données
-def get_tables():
-    connection = None
-    try:
-        connection = mysql.connector.connect(
-            host=DB_HOST,
-            port=DB_PORT,
-            user=DB_USER,
-            password=DB_PASSWORD,
-            database=DB_NAME,
-            charset=DB_CHARSET
-        )
-        if connection.is_connected():
-            cursor = connection.cursor()
-            cursor.execute("SHOW TABLES")
-            tables = cursor.fetchall()
-            return [table[0] for table in tables]
-    except Error as e:
-        return f"Erreur de connexion à la base de données: {e}"
-    finally:
-        if connection is not None and connection.is_connected():
-            cursor.close()
-            connection.close()
+# Beer model for Swagger
+beer_model = api.model('Beer', {
+    'name': fields.String(required=True, description='Name of the beer'),
+    'type': fields.String(description='Type of the beer'),
+    'quantity': fields.Integer(description='Available quantity'),
+    'brewery': fields.String(description='Brewery name'),
+    'abv': fields.Float(description='Alcohol by Volume'),
+})
 
-def get_table_by_id(table_id):
-    connection = None
-    try:
-        connection = mysql.connector.connect(
-            host=DB_HOST,
-            port=DB_PORT,
-            user=DB_USER,
-            password=DB_PASSWORD,
-            database=DB_NAME,
-            charset=DB_CHARSET
-        )
-        if connection.is_connected():
-            cursor = connection.cursor()
-            cursor.execute("SELECT * FROM tables WHERE id = %s", (table_id,))
-            table = cursor.fetchone()
-            if table:
-                return table
-            else:
-                return f"Table avec ID {table_id} non trouvée"
-    except Error as e:
-        return f"Erreur de connexion à la base de données: {e}"
-    finally:
-        if connection is not None and connection.is_connected():
-            cursor.close()
-            connection.close()
+# Brewery model for Swagger
+brewery_model = api.model('Brewery', {
+    'id': fields.Integer(description='ID of the brewery'),
+    'name': fields.String(required=True, description='Name of the brewery'),
+    'description': fields.String(description='Description of the brewery'),
+    'location': fields.String(description='Location of the brewery'),
+    'image_url': fields.String(description='Image URL of the brewery')
+})
 
-@ns.route('/')
-class TablesList(Resource):
+# User model for Swagger
+user_model = api.model('User', {
+    'pseudo': fields.String(required=True, description='Pseudo of the user'),
+    'email': fields.String(required=True, description='Email of the user'),
+    'password': fields.String(required=True, description='Password of the user'),
+    'address': fields.String(description='Address of the user'),
+    'phone_number': fields.String(description='Phone number of the user'),
+})
+
+def get_db_connection():
+    """Establish and return a database connection."""
+    return mysql.connector.connect(
+        host=DB_HOST,
+        port=DB_PORT,
+        user=DB_USER,
+        password=DB_PASSWORD,
+        database=DB_NAME,
+        charset=DB_CHARSET
+    )
+
+# Beers Routes
+@ns_beers.route('/')
+class BeersList(Resource):
+    @ns_beers.doc('list_beers')
     def get(self):
         """
-        Récupère toutes les tables de la base de données
+        Fetch all beers from the database
         """
-        tables = get_tables()
-        return jsonify(tables)
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM beers")
+            beers = cursor.fetchall()
+            return jsonify(beers)
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+    @ns_beers.doc('add_beer')
+    @ns_beers.expect(beer_model)
+    def post(self):
+        """
+        Add a new beer to the database
+        """
+        data = request.json
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            cursor.execute(
+                "INSERT INTO beers (name, type, quantity, brewery, abv) VALUES (%s, %s, %s, %s, %s)",
+                (data['name'], data['type'], data['quantity'], data['brewery'], data['abv'])
+            )
+            connection.commit()
+            return {'message': 'Beer added successfully'}, 201
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+@ns_beers.route('/<int:beer_id>')
+class Beer(Resource):
+    @ns_beers.doc('get_beer')
+    def get(self, beer_id):
+        """
+        Fetch a beer by its ID
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM beers WHERE id = %s", (beer_id,))
+            beer = cursor.fetchone()
+            if beer:
+                return jsonify(beer)
+            else:
+                return {'message': 'Beer not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+    @ns_beers.doc('update_beer')
+    @ns_beers.expect(beer_model)
+    def put(self, beer_id):
+        """
+        Update a beer by its ID
+        """
+        data = request.json
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            cursor.execute(
+                "UPDATE beers SET name = %s, type = %s, quantity = %s, brewery = %s, abv = %s WHERE id = %s",
+                (data['name'], data['type'], data['quantity'], data['brewery'], data['abv'], beer_id)
+            )
+            connection.commit()
+            if cursor.rowcount:
+                return {'message': 'Beer updated successfully'}, 200
+            else:
+                return {'message': 'Beer not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+    @ns_beers.doc('patch_beer')
+    def patch(self, beer_id):
+        """
+        Partially update a beer by its ID
+        """
+        data = request.json
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            fields = ', '.join(f"{key} = %s" for key in data.keys())
+            values = list(data.values()) + [beer_id]
+            cursor.execute(f"UPDATE beers SET {fields} WHERE id = %s", values)
+            connection.commit()
+            if cursor.rowcount:
+                return {'message': 'Beer updated successfully'}, 200
+            else:
+                return {'message': 'Beer not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+    @ns_beers.doc('delete_beer')
+    def delete(self, beer_id):
+        """
+        Delete a beer by its ID
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            cursor.execute("DELETE FROM beers WHERE id = %s", (beer_id,))
+            connection.commit()
+            if cursor.rowcount:
+                return {'message': 'Beer deleted successfully'}, 200
+            else:
+                return {'message': 'Beer not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+# Breweries Routes
+@ns_breweries.route('/')
+class BreweriesList(Resource):
+    @ns_breweries.doc('list_breweries')
+    def get(self):
+        """
+        Fetch all breweries from the database
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM breweries")  # Assure-toi que la table s'appelle 'breweries'
+            breweries = cursor.fetchall()
+            return jsonify(breweries)
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+@ns_breweries.route('/<int:brewery_id>')
+class Brewery(Resource):
+    @ns_breweries.doc('get_brewery')
+    def get(self, brewery_id):
+        """
+        Fetch a brewery by its ID
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM breweries WHERE id = %s", (brewery_id,))
+            brewery = cursor.fetchone()
+            if brewery:
+                return jsonify(brewery)
+            else:
+                return {'message': 'Brewery not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+# Modification de l'endpoint pour ne pas hacher le mot de passe
+@ns_users.route('/')
+class UsersList(Resource):
+    @ns_users.doc('add_user')
+    @ns_users.expect(user_model)
+    def post(self):
+        """
+        Register a new user in the database without hashing the password
+        """
+        data = request.json
+        
+        # Validation de l'email
+        email = data['email']
+        if not email:
+            return {'error': 'Email is required'}, 400
+        
+        # On ne hash pas le mot de passe ici
+        password = data['password']
+        
+        # Récupère les autres champs
+        pseudo = data['pseudo']
+        address = data.get('address', '')
+        phone_number = data.get('phone_number', '')
+        
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            
+            # Insert into users table without hashing the password
+            cursor.execute(
+                "INSERT INTO users (pseudo, email, password, address, phone_number) VALUES (%s, %s, %s, %s, %s)",
+                (pseudo, email, password, address, phone_number)
+            )
+            connection.commit()
+            
+            return {'message': 'User registered successfully'}, 201
+        
+        except Error as e:
+            return {'error': str(e)}, 500
+        
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+
+@ns_users.route('/<int:user_id>')
+class User(Resource):
+    @ns_users.doc('get_user')
+    def get(self, user_id):
+        """
+        Fetch a user by its ID
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+            user = cursor.fetchone()
+            if user:
+                return jsonify(user)
+            else:
+                return {'message': 'User not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
 
 if __name__ == '__main__':
     app.run(debug=True)

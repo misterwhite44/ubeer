@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./css/breweries.css"; 
 
+const BASE_URL = "http://127.0.0.1:5000"; // URL de base de ton API
+
 function Breweries() {
   const [breweries, setBreweries] = useState([]); // Stockage des brasseries
   const [loading, setLoading] = useState(true); // Indicateur de chargement
@@ -10,7 +12,7 @@ function Breweries() {
   useEffect(() => {
     const fetchBreweries = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/breweries/"); // URL de ton API Flask pour breweries
+        const response = await fetch(`${BASE_URL}/breweries/`); // URL de ton API Flask pour breweries
         if (!response.ok) throw new Error("Erreur lors du chargement des brasseries.");
 
         const data = await response.json();
@@ -40,7 +42,7 @@ function Breweries() {
               <p>Description : {brewery.description}</p>
               <p>Localisation : {brewery.location}</p>
               <img
-                src={brewery.image_url || "http://placekitten.com/200/300"} 
+                src={brewery.image_url ? `${BASE_URL}${brewery.image_url}` : "http://placekitten.com/200/300"}
                 alt={brewery.name}
                 className="brewery-image"
               />

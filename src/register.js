@@ -16,11 +16,13 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Vérification si les mots de passe correspondent
     if (password !== confirmPassword) {
       setError("Les mots de passe ne correspondent pas.");
       return;
     }
 
+    // Données à envoyer à l'API
     const requestData = {
       pseudo,
       email,
@@ -41,6 +43,7 @@ function Register() {
         body: JSON.stringify(requestData),
       });
 
+      // Vérification de la réponse de l'API
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error || "Inscription échouée.");
@@ -49,8 +52,9 @@ function Register() {
       const data = await response.json();
       console.log("Réponse de l'API :", data);
 
+      // Vérification du message de réussite
       if (data.message === "Utilisateur créé avec succès") {
-        navigate("/login");
+        navigate("/login"); // Redirige l'utilisateur vers la page de connexion
       } else {
         setError(data.error || "Une erreur est survenue.");
       }
@@ -133,3 +137,4 @@ function Register() {
 }
 
 export default Register;
+

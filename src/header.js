@@ -17,6 +17,9 @@ function Header() {
           <li>
             <Link to="/breweries">Brasseries</Link> {/* Nouveau bouton pour Brasseries */}
           </li>
+          <li>
+            <Link to="/admin">Admin</Link> {/* Nouveau bouton pour Brasseries */}
+          </li>
         </ul>
       </nav>
     </header>

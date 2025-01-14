@@ -1,74 +1,152 @@
+/* Style de base pour le catalogue */
 .catalogue-container {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f8f8f8;
-  }
-  
-  h1 {
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .beer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  
-  .beer-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .beer-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .beer-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  h3 {
-    margin: 0.5rem 0;
-    color: #000;
-  }
-  
-  p {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  .beer-price {
-    font-weight: bold;
-    color: #6ab04c; /* Vert Uber Eats */
-    margin-top: 0.5rem;
-  }
-  
-  .order-button {
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #6ab04c; /* Vert Uber Eats */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .order-button:hover {
-    background-color: #4b8c38; /* Vert foncé */
-  }
-  
-  .error {
-    color: red;
-    font-weight: bold;
-  }
-  
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-logo {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.cart-count {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.beer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.beer-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.beer-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.beer-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.beer-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+}
+
+.delete-beer-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-beer-button:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+
+/* Style pour la barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Place les éléments aux extrémités */
+  align-items: center; /* Centre verticalement tous les éléments */
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/* Conteneur pour le bouton "Ajouter une bière" et le panier */
+.navbar .left-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacement entre le bouton et le panier */
+}
+
+/* Style pour le bouton "Ajouter une bière" */
+.add-beer-button {
+  padding: 6px 12px; /* Réduit la taille du bouton */
+  font-size: 14px; /* Réduit la taille du texte du bouton */
+  background-color: #007bff; /* Couleur de fond (bleu) */
+  color: white; /* Texte en blanc */
+  border: none; /* Retirer la bordure */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de la souris en forme de main */
+  transition: background-color 0.3s ease; /* Effet de transition pour la couleur */
+}
+
+.add-beer-button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Style pour la zone du panier */
+.cart-logo {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 24px; /* Taille de l'icône du panier */
+}
+
+.cart-count {
+  margin-left: 8px; /* Espacement entre l'icône et le nombre */
+  font-weight: bold;
+}
+
+.cart-icon {
+  font-size: 12px;
+}

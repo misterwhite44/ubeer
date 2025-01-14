@@ -3,15 +3,12 @@ from flask_restx import Api, Resource, fields
 from flask_cors import CORS
 import mysql.connector
 from mysql.connector import Error
-from werkzeug.security import generate_password_hash
-import hashlib
 
 app = Flask(__name__)
 
-# Activer CORS
-CORS(app, resources={r"/*": {"origins": "*"}})
+# CORS configuration to allow requests from React (localhost:3000)
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
-# Swagger API configuration
 api = Api(app, version='1.0', title='Ubeers API',
           description='API for managing beers, breweries, deliveries, and users')
 
@@ -19,7 +16,6 @@ ns_beers = api.namespace('beers', description='Beer Operations')
 ns_breweries = api.namespace('breweries', description='Brewery Operations')
 ns_users = api.namespace('users', description='User Operations')
 
-# Database configuration
 DB_HOST = "127.0.0.1"
 DB_PORT = "8889"
 DB_USER = "herbier"
@@ -27,7 +23,6 @@ DB_PASSWORD = "epsi"
 DB_NAME = "ubeer"
 DB_CHARSET = "utf8mb4"
 
-# Beer model for Swagger
 beer_model = api.model('Beer', {
     'name': fields.String(required=True, description='Name of the beer'),
     'type': fields.String(description='Type of the beer'),
@@ -36,7 +31,6 @@ beer_model = api.model('Beer', {
     'abv': fields.Float(description='Alcohol by Volume'),
 })
 
-# Brewery model for Swagger
 brewery_model = api.model('Brewery', {
     'id': fields.Integer(description='ID of the brewery'),
     'name': fields.String(required=True, description='Name of the brewery'),
@@ -45,7 +39,6 @@ brewery_model = api.model('Brewery', {
     'image_url': fields.String(description='Image URL of the brewery')
 })
 
-# User model for Swagger
 user_model = api.model('User', {
     'pseudo': fields.String(required=True, description='Pseudo of the user'),
     'email': fields.String(required=True, description='Email of the user'),
@@ -65,7 +58,6 @@ def get_db_connection():
         charset=DB_CHARSET
     )
 
-# Beers Routes
 @ns_beers.route('/')
 class BeersList(Resource):
     @ns_beers.doc('list_beers')
@@ -158,52 +150,37 @@ class Beer(Resource):
                 cursor.close()
                 connection.close()
 
-    @ns_beers.doc('patch_beer')
-    def patch(self, beer_id):
-        """
-        Partially update a beer by its ID
-        """
-        data = request.json
-        try:
-            connection = get_db_connection()
-            cursor = connection.cursor()
-            fields = ', '.join(f"{key} = %s" for key in data.keys())
-            values = list(data.values()) + [beer_id]
-            cursor.execute(f"UPDATE beers SET {fields} WHERE id = %s", values)
-            connection.commit()
-            if cursor.rowcount:
-                return {'message': 'Beer updated successfully'}, 200
-            else:
-                return {'message': 'Beer not found'}, 404
-        except Error as e:
-            return {'error': str(e)}, 500
-        finally:
-            if connection.is_connected():
-                cursor.close()
-                connection.close()
-
     @ns_beers.doc('delete_beer')
+
     def delete(self, beer_id):
-        """
-        Delete a beer by its ID
-        """
+   
         try:
             connection = get_db_connection()
             cursor = connection.cursor()
+
+        # Exécution de la requête DELETE pour supprimer la bière avec l'ID spécifié
             cursor.execute("DELETE FROM beers WHERE id = %s", (beer_id,))
+
+        # Validation des changements dans la base de données
             connection.commit()
-            if cursor.rowcount:
+
+        # Vérification si une ligne a été affectée, ce qui signifie que la bière a été supprimée
+            if cursor.rowcount > 0:
                 return {'message': 'Beer deleted successfully'}, 200
             else:
                 return {'message': 'Beer not found'}, 404
+
         except Error as e:
+        # Si une erreur se produit, on la capture et retourne une erreur serveur
             return {'error': str(e)}, 500
+
         finally:
+        # Fermeture de la connexion et du curseur si la connexion est encore ouverte
             if connection.is_connected():
                 cursor.close()
                 connection.close()
 
-# Breweries Routes
+
 @ns_breweries.route('/')
 class BreweriesList(Resource):
     @ns_breweries.doc('list_breweries')
@@ -214,7 +191,7 @@ class BreweriesList(Resource):
         try:
             connection = get_db_connection()
             cursor = connection.cursor(dictionary=True)
-            cursor.execute("SELECT * FROM breweries")  # Assure-toi que la table s'appelle 'breweries'
+            cursor.execute("SELECT * FROM breweries")
             breweries = cursor.fetchall()
             return jsonify(breweries)
         except Error as e:
@@ -247,46 +224,25 @@ class Brewery(Resource):
                 cursor.close()
                 connection.close()
 
-# Modification de l'endpoint pour ne pas hacher le mot de passe
 @ns_users.route('/')
 class UsersList(Resource):
-    @ns_users.doc('add_user')
-    @ns_users.expect(user_model)
-    def post(self):
+    @ns_users.doc('list_users')
+    def get(self):
         """
-        Register a new user in the database without hashing the password
+        Fetch all users from the database
         """
-        data = request.json
-        
-        # Validation de l'email
-        email = data['email']
-        if not email:
-            return {'error': 'Email is required'}, 400
-        
-        # On ne hash pas le mot de passe ici
-        password = data['password']
-        
-        # Récupère les autres champs
-        pseudo = data['pseudo']
-        address = data.get('address', '')
-        phone_number = data.get('phone_number', '')
-        
         try:
             connection = get_db_connection()
-            cursor = connection.cursor()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM users")
+            users = cursor.fetchall()
             
-            # Insert into users table without hashing the password
-            cursor.execute(
-                "INSERT INTO users (pseudo, email, password, address, phone_number) VALUES (%s, %s, %s, %s, %s)",
-                (pseudo, email, password, address, phone_number)
-            )
-            connection.commit()
+            # Ajout du log pour vérifier les utilisateurs récupérés
+            print("Utilisateurs récupérés:", users)  # Affiche les utilisateurs dans les logs du serveur
             
-            return {'message': 'User registered successfully'}, 201
-        
+            return jsonify(users)
         except Error as e:
             return {'error': str(e)}, 500
-        
         finally:
             if connection.is_connected():
                 cursor.close()
@@ -305,6 +261,7 @@ class User(Resource):
             cursor = connection.cursor(dictionary=True)
             cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
             user = cursor.fetchone()
+            
             if user:
                 return jsonify(user)
             else:
@@ -316,6 +273,149 @@ class User(Resource):
                 cursor.close()
                 connection.close()
 
+#deliveries
+
+delivery_model = api.model('Delivery', {
+    'beer_id': fields.Integer(required=True, description='ID of the beer being delivered'),
+    'quantity': fields.Integer(required=True, description='Quantity of the beer being delivered'),
+    'delivery_address': fields.String(required=True, description='Delivery address'),
+    'delivery_date': fields.String(required=True, description='Date and time of delivery'),
+    'status': fields.String(enum=['Pending', 'Delivered', 'Cancelled'], default='Pending', description='Delivery status'),
+    'user_id': fields.Integer(required=True, description='ID of the user receiving the delivery')
+})
+
+ns_deliveries = api.namespace('deliveries', description='Delivery Operations')
+
+@ns_deliveries.route('/')
+class DeliveriesList(Resource):
+    @ns_deliveries.doc('list_deliveries')
+    def get(self):
+        """
+        Fetch all deliveries from the database
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM deliveries")
+            deliveries = cursor.fetchall()
+            return jsonify(deliveries)
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+    @ns_deliveries.doc('add_delivery')
+    @ns_deliveries.expect(delivery_model)
+    def post(self):
+        """
+        Add a new delivery to the database
+        """
+        data = request.json
+        
+        # Extraction des données de la livraison
+        beer_id = data.get('beer_id')
+        quantity = data.get('quantity')
+        delivery_address = data.get('delivery_address')
+        delivery_date = data.get('delivery_date')
+        status = data.get('status', 'Pending')  # Défaut à "Pending" si non précisé
+        user_id = data.get('user_id')
+        
+        if not beer_id or not quantity or not delivery_address or not delivery_date or not user_id:
+            return {'error': 'Tous les champs sont requis'}, 400
+        
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            cursor.execute(
+                "INSERT INTO deliveries (beer_id, quantity, delivery_address, delivery_date, status, user_id) "
+                "VALUES (%s, %s, %s, %s, %s, %s)",
+                (beer_id, quantity, delivery_address, delivery_date, status, user_id)
+            )
+            connection.commit()
+            return {'message': 'Delivery added successfully'}, 201
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+@ns_deliveries.route('/<int:delivery_id>')
+class Delivery(Resource):
+    @ns_deliveries.doc('get_delivery')
+    def get(self, delivery_id):
+        """
+        Fetch a delivery by its ID
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor(dictionary=True)
+            cursor.execute("SELECT * FROM deliveries WHERE id = %s", (delivery_id,))
+            delivery = cursor.fetchone()
+            if delivery:
+                return jsonify(delivery)
+            else:
+                return {'message': 'Delivery not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+    @ns_deliveries.doc('update_delivery')
+    @ns_deliveries.expect(delivery_model)
+    def put(self, delivery_id):
+        """
+        Update a delivery by its ID
+        """
+        data = request.json
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            cursor.execute(
+                "UPDATE deliveries SET beer_id = %s, quantity = %s, delivery_address = %s, "
+                "delivery_date = %s, status = %s, user_id = %s WHERE id = %s",
+                (data['beer_id'], data['quantity'], data['delivery_address'], data['delivery_date'], 
+                 data['status'], data['user_id'], delivery_id)
+            )
+            connection.commit()
+            if cursor.rowcount:
+                return {'message': 'Delivery updated successfully'}, 200
+            else:
+                return {'message': 'Delivery not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+    @ns_deliveries.doc('delete_delivery')
+    def delete(self, delivery_id):
+        """
+        Delete a delivery by its ID
+        """
+        try:
+            connection = get_db_connection()
+            cursor = connection.cursor()
+            cursor.execute("DELETE FROM deliveries WHERE id = %s", (delivery_id,))
+            connection.commit()
+            if cursor.rowcount:
+                return {'message': 'Delivery deleted successfully'}, 200
+            else:
+                return {'message': 'Delivery not found'}, 404
+        except Error as e:
+            return {'error': str(e)}, 500
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
+

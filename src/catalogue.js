@@ -16,6 +16,7 @@ function Catalogue() {
     description: "",
     price: "",
     brewery_id: "",
+    image_url: "",  // Ajout du champ image_url
   });
   const [editBeer, setEditBeer] = useState(null);
 
@@ -68,6 +69,7 @@ function Catalogue() {
       description: beer.description,
       price: beer.price,
       brewery_id: beer.brewery_id,
+      image_url: beer.image_url || "",  // Ajout de l'url de l'image
     });
   };
 
@@ -104,11 +106,13 @@ function Catalogue() {
         },
         body: JSON.stringify(newBeer),
       });
+
       if (response.ok) {
         if (editBeer) {
+          const updatedBeer = await response.json();
           setBeers(
             beers.map((beer) =>
-              beer.id === editBeer.id ? { ...beer, ...newBeer } : beer
+              beer.id === editBeer.id ? updatedBeer : beer
             )
           );
         } else {
@@ -202,6 +206,15 @@ function Catalogue() {
                 ))}
               </select>
             </label>
+            <label>
+              Image URL :
+              <input
+                type="text"
+                name="image_url"
+                value={newBeer.image_url}
+                onChange={(e) => setNewBeer({ ...newBeer, image_url: e.target.value })}
+              />
+            </label>
             <button type="submit">{editBeer ? "Mettre à jour la bière" : "Ajouter la bière"}</button>
             <button type="button" onClick={() => setShowForm(false)}>
               Annuler
@@ -233,10 +246,10 @@ function Catalogue() {
           <div key={beer.id} className="beer-card">
             <h3>{beer.name}</h3>
             <img
-            src={beer.image_url || "https://via.placeholder.com/150"}
-            alt={beer.name}
-            className="beer-image"
-/>
+              src={beer.image_url || "https://via.placeholder.com/150"}
+              alt={beer.name}
+              className="beer-image"
+            />
             <p><strong>Description :</strong> {beer.description || "Non spécifiée"}</p>
             <p><strong>Prix :</strong> {beer.price ? `${beer.price} €` : "Non spécifié"}</p>
             <button className="add-to-cart-button" onClick={() => addToCart(beer)}>

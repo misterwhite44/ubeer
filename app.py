@@ -6,7 +6,6 @@ from mysql.connector import Error
 
 app = Flask(__name__)
 
-# CORS configuration to allow requests from React (localhost:3000)
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 api = Api(app, version='1.0', title='Ubeers API',
@@ -28,7 +27,7 @@ beer_model = api.model('Beer', {
     'type': fields.String(description='Type of the beer'),
     'quantity': fields.Integer(description='Available quantity'),
     'brewery': fields.String(description='Brewery name'),
-    'abv': fields.Float(description='Alcohol by Volume'),
+    #'abv': fields.Float(description='Alcohol by Volume'),
     'image_url': fields.String(description='Image URL of the beer')
 
 })
@@ -89,9 +88,6 @@ class BeersList(Resource):
     @ns_beers.doc('add_beer')
     @ns_beers.expect(beer_model)
     def post(self):
-        """
-        Add a new beer to the database
-        """
         data = request.json
         try:
             connection = get_db_connection()
@@ -143,8 +139,8 @@ class Beer(Resource):
             connection = get_db_connection()
             cursor = connection.cursor()
             cursor.execute(
-                "UPDATE beers SET name = %s, type = %s, quantity = %s, brewery = %s, abv = %s WHERE id = %s",
-                (data['name'], data['type'], data['quantity'], data['brewery'], data['abv'], beer_id)
+                "UPDATE beers SET name = %s, type = %s, quantity = %s, brewery = %s, abv = %s, image_url = %s WHERE id = %s",
+                (data['name'], data['type'], data['quantity'], data['brewery'], data['abv'], data.get('image_url'), beer_id)
             )
             connection.commit()
             if cursor.rowcount:

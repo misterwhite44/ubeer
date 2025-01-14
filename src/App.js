@@ -11,6 +11,7 @@ import Register from "./register";
 import Home from "./home";
 import Panier from "./cart";
 import Order from "./order";
+import Profile from "./userProfile";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Login />} /> 
+          <Route path="/" element={<Home />} /> 
           <Route path="/home" element={<Home />} />
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/breweries" element={<Breweries />} />
@@ -28,6 +29,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Panier />} />
           <Route path="/order" element={<Order />} />
+          <Route path="/userProfile" element={<Profile />} />
 
         </Routes>
 

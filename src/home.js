@@ -1,6 +1,7 @@
-// src/Home.js
-
 import React from "react";
+import { Link } from "react-router-dom"; // Ajoutez cette ligne
+import LoginButton from "./login";
+import LogoutButton from "./logout";
 
 function Home() {
   return (
@@ -12,7 +13,9 @@ function Home() {
           Profitez d'une sélection de bières artisanales livrées directement chez vous,
           rapidement et facilement.
         </p>
-        <button className="cta-button">Commandez Maintenant</button>
+        <Link to="/catalogue">
+          <button className="cta-button">Commandez Maintenant</button>
+        </Link>
       </section>
 
       {/* About Section */}

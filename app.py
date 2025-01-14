@@ -17,9 +17,9 @@ ns_breweries = api.namespace('breweries', description='Brewery Operations')
 ns_users = api.namespace('users', description='User Operations')
 
 DB_HOST = "127.0.0.1"
-DB_PORT = "8889"
-DB_USER = "herbier"
-DB_PASSWORD = "epsi"
+DB_PORT = "3306"
+DB_USER = "root"
+DB_PASSWORD = ""
 DB_NAME = "ubeer"
 DB_CHARSET = "utf8mb4"
 

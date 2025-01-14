@@ -29,6 +29,8 @@ beer_model = api.model('Beer', {
     'quantity': fields.Integer(description='Available quantity'),
     'brewery': fields.String(description='Brewery name'),
     'abv': fields.Float(description='Alcohol by Volume'),
+    'image_url': fields.String(description='Image URL of the beer')
+
 })
 
 brewery_model = api.model('Brewery', {
@@ -70,6 +72,12 @@ class BeersList(Resource):
             cursor = connection.cursor(dictionary=True)
             cursor.execute("SELECT * FROM beers")
             beers = cursor.fetchall()
+            
+            # Vérification que les URLs d'images sont valides
+            for beer in beers:
+                if 'image_url' in beer and beer['image_url']:
+                    beer['image_url'] = beer['image_url']
+            
             return jsonify(beers)
         except Error as e:
             return {'error': str(e)}, 500

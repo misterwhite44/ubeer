@@ -232,13 +232,11 @@ function Catalogue() {
         {filteredBeers.map((beer) => (
           <div key={beer.id} className="beer-card">
             <h3>{beer.name}</h3>
-            {beer.image_url && (
-              <img
-                src={beer.image_url}
-                alt={beer.name}
-                className="beer-image"
-              />
-            )}
+            <img
+            src={beer.image_url || "https://via.placeholder.com/150"}
+            alt={beer.name}
+            className="beer-image"
+/>
             <p><strong>Description :</strong> {beer.description || "Non spécifiée"}</p>
             <p><strong>Prix :</strong> {beer.price ? `${beer.price} €` : "Non spécifié"}</p>
             <button className="add-to-cart-button" onClick={() => addToCart(beer)}>

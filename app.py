@@ -201,6 +201,12 @@ class BreweriesList(Resource):
             cursor = connection.cursor(dictionary=True)
             cursor.execute("SELECT * FROM breweries")
             breweries = cursor.fetchall()
+            
+            # Vérification que les URLs d'images sont valides
+            for brewery in breweries:
+                if 'image_url' in brewery and brewery['image_url']:
+                    brewery['image_url'] = brewery['image_url']
+            
             return jsonify(breweries)
         except Error as e:
             return {'error': str(e)}, 500
@@ -222,6 +228,9 @@ class Brewery(Resource):
             cursor.execute("SELECT * FROM breweries WHERE id = %s", (brewery_id,))
             brewery = cursor.fetchone()
             if brewery:
+                # Vérification que l'URL de l'image est valide
+                if 'image_url' in brewery and brewery['image_url']:
+                    brewery['image_url'] = brewery['image_url']
                 return jsonify(brewery)
             else:
                 return {'message': 'Brewery not found'}, 404

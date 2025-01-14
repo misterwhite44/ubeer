@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./css/breweries.css"; // Assure-toi de créer ce fichier pour le style
+import "./css/breweries.css"; 
 
 function Breweries() {
   const [breweries, setBreweries] = useState([]); // Stockage des brasseries
@@ -40,7 +40,7 @@ function Breweries() {
               <p>Description : {brewery.description}</p>
               <p>Localisation : {brewery.location}</p>
               <img
-                src={brewery.image_url || "http://placekitten.com/200/300"} // Utilise une image par défaut si image_url est vide
+                src={brewery.image_url || "http://placekitten.com/200/300"} 
                 alt={brewery.name}
                 className="brewery-image"
               />

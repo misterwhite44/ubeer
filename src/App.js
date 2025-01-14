@@ -1,5 +1,4 @@
 // src/App.js
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./css/App.css";
@@ -9,7 +8,10 @@ import Catalogue from "./catalogue";
 import Breweries from "./breweries";
 import Login from "./login";
 import Register from "./register";
-import Home from "./home"; // Assurez-vous d'importer le fichier Home
+import Home from "./home";
+import Panier from "./cart";
+import Order from "./order";
+
 
 function App() {
   return (
@@ -18,21 +20,15 @@ function App() {
         <Header />
 
         <Routes>
-          {/* Page d'accueil */}
-          <Route path="/" element={<Login />} /> {/* Page de connexion par défaut */}
-          <Route path="/home" element={<Home />} /> {/* Ajouter la route pour Home */}
-
-          {/* Page Catalogue */}
+          <Route path="/" element={<Login />} /> 
+          <Route path="/home" element={<Home />} />
           <Route path="/catalogue" element={<Catalogue />} />
-
-          {/* Page Breweries */}
           <Route path="/breweries" element={<Breweries />} />
-
-          {/* Page d'inscription */}
           <Route path="/register" element={<Register />} />
-
-          {/* Page de connexion */}
           <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Panier />} />
+          <Route path="/order" element={<Order />} />
+
         </Routes>
 
         <Footer />

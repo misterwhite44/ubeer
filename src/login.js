@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/login", {
+      const response = await fetch("http://127.0.0.1:5000/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,7 +26,7 @@ function Login() {
 
       const data = await response.json();
       localStorage.setItem("token", data.token); // Stockage du token
-      navigate("/"); // Redirection vers la page d'accueil après la connexion
+      navigate("/"); 
     } catch (err) {
       setError(err.message);
     }
@@ -57,7 +57,7 @@ function Login() {
         </label>
         <button type="submit">Se connecter</button>
       </form>
-      {/* Ajouter le bouton vers la page d'inscription */}
+      {}
       <div className="register-link">
         <p>Pas de compte ? <a href="/register">S'inscrire ici</a></p>
       </div>

@@ -188,6 +188,7 @@ function Catalogue() {
                 value={newBeer.price}
                 onChange={(e) => setNewBeer({ ...newBeer, price: e.target.value })}
                 step="0.01"
+                required
               />
             </label>
             <label>

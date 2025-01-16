@@ -26,13 +26,12 @@ DB_CHARSET = 'utf8mb4'
 
 beer_model = api.model('Beer', {
     'name': fields.String(required=True, description='Name of the beer'),
-    'type': fields.String(description='Type of the beer'),
-    'quantity': fields.Integer(description='Available quantity'),
-    'brewery': fields.String(description='Brewery name'),
-    #'abv': fields.Float(description='Alcohol by Volume'),
+    'description': fields.String(description='Description of the beer'),
+    'price': fields.Float(required=True, description='Price of the beer'),
+    'brewery_id': fields.Integer(required=True, description='ID of the brewery'),
     'image_url': fields.String(description='Image URL of the beer')
-
 })
+
 
 brewery_model = api.model('Brewery', {
     'id': fields.Integer(description='ID of the brewery'),
@@ -91,13 +90,19 @@ class BeersList(Resource):
     @ns_beers.doc('add_beer')
     @ns_beers.expect(beer_model)
     def post(self):
+        """
+        Add a new beer to the database
+        """
         data = request.json
         try:
             connection = get_db_connection()
             cursor = connection.cursor()
             cursor.execute(
-                "INSERT INTO beers (name, type, quantity, brewery, abv) VALUES (%s, %s, %s, %s, %s)",
-                (data['name'], data['type'], data['quantity'], data['brewery'], data['abv'])
+                """
+                INSERT INTO beers (name, description, price, brewery_id, image_url)
+                VALUES (%s, %s, %s, %s, %s)
+                """,
+                (data['name'], data['description'], data['price'], data['brewery_id'], data['image_url'])
             )
             connection.commit()
             return {'message': 'Beer added successfully'}, 201

@@ -24,8 +24,8 @@ function Catalogue() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const beerResponse = await fetch("http://127.0.0.1:5000/beers/");
-        const breweryResponse = await fetch("http://127.0.0.1:5000/breweries/");
+        const beerResponse = await fetch("https://back-ubeers.onrender.com/beers/");
+        const breweryResponse = await fetch("https://back-ubeers.onrender.com/breweries/");
 
         if (!beerResponse.ok || !breweryResponse.ok) {
           throw new Error("Erreur lors du chargement des données.");
@@ -95,7 +95,7 @@ function Catalogue() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    const url = editBeer ? `http://127.0.0.1:5000/beers/${editBeer.id}` : "http://127.0.0.1:5000/beers/";
+    const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
     const method = editBeer ? "PUT" : "POST";
 
     try {

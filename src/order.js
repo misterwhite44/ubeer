@@ -14,7 +14,7 @@ function Orders() {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(storedCart);
 
-    fetch("http://127.0.0.1:5000/users/")
+    fetch("https://back-ubeers.onrender.com/users/")
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -73,7 +73,7 @@ function Orders() {
       };
 
       try {
-        const response = await fetch("http://127.0.0.1:5000/deliveries/", {
+        const response = await fetch("https://back-ubeers.onrender.com/deliveries/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

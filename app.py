@@ -15,12 +15,14 @@ ns_beers = api.namespace('beers', description='Beer Operations')
 ns_breweries = api.namespace('breweries', description='Brewery Operations')
 ns_users = api.namespace('users', description='User Operations')
 
-DB_HOST = "127.0.0.1"
-DB_PORT = "3306"
-DB_USER = "root"
-DB_PASSWORD = ""
-DB_NAME = "ubeer"
-DB_CHARSET = "utf8mb4"
+DB_HOST = "bwawmx4ntfjwzxxrotz4-mysql.services.clever-cloud.com"
+DB_PORT = 3306
+DB_USER = "uuw6sv5bvs11qa51"
+DB_PASSWORD = "md1HTCoAHEg0s4HbJHGc"
+DB_NAME = "bwawmx4ntfjwzxxrotz4"
+DB_CHARSET = 'utf8mb4'
+
+
 
 beer_model = api.model('Beer', {
     'name': fields.String(required=True, description='Name of the beer'),
@@ -58,6 +60,7 @@ def get_db_connection():
         database=DB_NAME,
         charset=DB_CHARSET
     )
+
 
 @ns_beers.route('/')
 class BeersList(Resource):

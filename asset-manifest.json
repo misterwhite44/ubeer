@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ubeers/static/css/main.a232061b.css",
+    "main.js": "/ubeers/static/js/main.f575efd1.js",
+    "static/js/488.f85b88eb.chunk.js": "/ubeers/static/js/488.f85b88eb.chunk.js",
+    "index.html": "/ubeers/index.html",
+    "main.a232061b.css.map": "/ubeers/static/css/main.a232061b.css.map",
+    "main.f575efd1.js.map": "/ubeers/static/js/main.f575efd1.js.map",
+    "488.f85b88eb.chunk.js.map": "/ubeers/static/js/488.f85b88eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a232061b.css",
+    "static/js/main.f575efd1.js"
+  ]
+}

@@ -16,7 +16,7 @@ function Catalogue() {
     description: "",
     price: "",
     brewery_id: "",
-    image_url: "",  // Ajout du champ image_url
+    image_url: "", // Ajout du champ image_url
   });
   const [editBeer, setEditBeer] = useState(null);
 

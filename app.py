@@ -147,8 +147,8 @@ class Beer(Resource):
             connection = get_db_connection()
             cursor = connection.cursor()
             cursor.execute(
-                "UPDATE beers SET name = %s, type = %s, quantity = %s, brewery = %s, abv = %s, image_url = %s WHERE id = %s",
-                (data['name'], data['type'], data['quantity'], data['brewery'], data['abv'], data.get('image_url'), beer_id)
+                "UPDATE beers SET name = %s, description = %s, price = %s, brewery_id = %s, image_url = %s WHERE id = %s",
+                (data['name'], data['description'], data['price'], data['brewery_id'], data.get('image_url'), beer_id)
             )
             connection.commit()
             if cursor.rowcount:
@@ -161,6 +161,8 @@ class Beer(Resource):
             if connection.is_connected():
                 cursor.close()
                 connection.close()
+
+
 
     @ns_beers.doc('delete_beer')
 

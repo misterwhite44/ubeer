@@ -14,7 +14,9 @@ function Orders() {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(storedCart);
 
-    fetch("https://back-ubeers.onrender.com/users/")
+    //fetch("https://back-ubeers.onrender.com/users/")
+    fetch("http://localhost:5000/users/")
+
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -73,7 +75,9 @@ function Orders() {
       };
 
       try {
-        const response = await fetch("https://back-ubeers.onrender.com/deliveries/", {
+        //const response = await fetch("https://back-ubeers.onrender.com/deliveries/", {
+        const response = await fetch("http://localhost:5000/deliveries/", {
+
           method: "POST",
           headers: {
             "Content-Type": "application/json",

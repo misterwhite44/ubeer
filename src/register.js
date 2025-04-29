@@ -33,9 +33,11 @@ function Register() {
 
     setIsLoading(true); // Active le chargement
     setError(null); // Réinitialise les erreurs
-
+    
     try {
-      const response = await fetch("https://back-ubeers.onrender.com/users", {
+      //const response = await fetch("https://back-ubeers.onrender.com/users", {
+      const response = await fetch("https//localhost:5000/users", {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json",

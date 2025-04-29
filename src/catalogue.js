@@ -24,8 +24,10 @@ function Catalogue() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const beerResponse = await fetch("https://back-ubeers.onrender.com/beers/");
-        const breweryResponse = await fetch("https://back-ubeers.onrender.com/breweries/");
+        //const beerResponse = await fetch("https://back-ubeers.onrender.com/beers/");
+        //const breweryResponse = await fetch("https://back-ubeers.onrender.com/breweries/");
+        const beerResponse = await fetch("http://localhost:5000/beers/");
+        const breweryResponse = await fetch("http://localhost:5000/breweries/");
 
         if (!beerResponse.ok || !breweryResponse.ok) {
           throw new Error("Erreur lors du chargement des données.");
@@ -95,7 +97,8 @@ function Catalogue() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
+    //const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
+    const url = editBeer ? `http://localhost:5000/beers/${editBeer.id}` : "http://localhost:5000/beers/";
     const method = editBeer ? "PUT" : "POST";
 
     try {

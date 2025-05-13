@@ -111,7 +111,7 @@ jobs:
           export PATH=$JMETER_HOME/bin:$PATH
           echo "export PATH=$JMETER_HOME/bin:\$PATH" >> $GITHUB_ENV  # Rendre PATH dispo dans les étapes suivantes
           cd ubeer  # Accède au répertoire du frontend
-          jmeter -n -t tests.jmx -l results.jtl
+          jmeter -n -t tests/jmeter/test_beers_load.jmx -l results.jtl
 
       # Étape 6 : Exécuter les tests Playwright
       - name: Run Playwright Tests

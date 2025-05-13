@@ -77,6 +77,20 @@ jobs:
           cd ubeer  # Répertoire du frontend
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
+      - name: Install dependencies for Playwright
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+          libflite1 \
+          libavif-dev \
+          libharfbuzz-dev \
+          libsecret-1-dev \
+          libhyphen-dev \
+          libmanette-dev \
+          libgles2-mesa \
+          libx264-dev
+
+      
 
       # Étape 5 : Exécuter les tests Playwright
       - name: Run Playwright Tests

@@ -13,28 +13,49 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Étape 1 : Checkout du code du dépôt
-      - name: Checkout repository
+      # Étape 1 : Checkout du code du dépôt frontend
+      - name: Checkout frontend repository
         uses: actions/checkout@v2
 
-      # Étape 2 : Installer Node.js
+      # Étape 2 : Checkout du backend repository
+      - name: Checkout backend repository
+        uses: actions/checkout@v2
+        with:
+          repository: misterwhite44/back_ubeers  # Répertoire du backend
+
+      # Étape 3 : Installer les dépendances du backend
+      - name: Install backend dependencies
+        run: |
+          cd back_ubeers  # Répertoire du backend
+          python -m venv venv  # Crée un environnement virtuel
+          source venv/bin/activate  # Active l'environnement virtuel
+          pip install -r requirements.txt  # Installe les dépendances du backend
+
+      # Étape 4 : Démarrer le serveur Flask en arrière-plan
+      - name: Start Flask backend server
+        run: |
+          cd back_ubeers  # Répertoire du backend
+          nohup FLASK_APP=app.py FLASK_ENV=development flask run &  # Démarre Flask en arrière-plan
+          sleep 10  # Attends que le serveur démarre
+
+      # Étape 5 : Installer Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'  # Remplace par la version souhaitée
 
-      # Étape 3 : Installer les dépendances du projet
-      - name: Install dependencies
+      # Étape 6 : Installer les dépendances du frontend
+      - name: Install frontend dependencies
         run: |
           npm install
 
-      # Étape 4 : Démarrer l'application en arrière-plan
-      - name: Start the application
+      # Étape 7 : Démarrer l'application frontend en arrière-plan
+      - name: Start the frontend application
         run: |
-          nohup npm start &  # Démarre l'application en arrière-plan
-          sleep 10  # Attends que le serveur démarre
+          nohup npm start &  # Démarre l'application frontend en arrière-plan
+          sleep 10  # Attends que le serveur frontend démarre
 
-      # Étape 5 : Exécuter les tests Playwright
+      # Étape 8 : Exécuter les tests Playwright
       - name: Run Playwright Tests
         run: |
           npx playwright install  # Installer Playwright (si nécessaire)

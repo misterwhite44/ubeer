@@ -6,5 +6,5 @@ test('Navigation et affichage du panier', async ({ page }) => {
   await cartIcon.click();
 
   await expect(page).toHaveURL(/.*cart/);
-  await expect(page.locator('h1')).toHaveText('Mon Panier');
+  await expect(page.getByRole('heading', { level: 1, name: 'Mon Panier' })).toBeVisible();
 });

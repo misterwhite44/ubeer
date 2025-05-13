@@ -71,12 +71,25 @@ jobs:
           cd ubeer  # Accède au répertoire du frontend cloné
           npm install  # Installe les dépendances du frontend
       
-      # Étape 4 : Démarrer le backend pour les tests frontend
-      - name: Start Flask backend server for frontend tests
+      # Étape 1 : Checkout du code du backend
+      - name: Checkout backend repository
+        uses: actions/checkout@v2
+        with:
+          repository: misterwhite44/back_ubeers  # Répertoire du backend
+          path: back_ubeers  # Le répertoire du backend cloné
+
+      # Étape 2 : Installer les dépendances du backend
+      - name: Install backend dependencies
+        run: |
+          cd back_ubeers  # Accède au répertoire du backend cloné
+          pip install -r requirements.txt  # Installe les dépendances du backend si nécessaire
+
+      # Étape 3 : Démarrer le serveur Flask en arrière-plan
+      - name: Start Flask backend server
         run: |
           cd back_ubeers  # Répertoire du backend
-          nohup python3 app.py &  # Démarre Flask en arrière-plan avec python3 pour les tests frontend
-          sleep 10  # Attends que le serveur backend démarre
+          nohup python3 app.py &  # Démarre Flask en arrière-plan avec python3
+          sleep 10  # Attends que le serveur démarre
 
       # Étape 5 : Démarrer l'application frontend en arrière-plan
       - name: Start the frontend application

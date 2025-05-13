@@ -71,13 +71,6 @@ jobs:
           cd ubeer  # Accède au répertoire du frontend cloné
           npm install  # Installe les dépendances du frontend
       
-      # Étape 4 : Installer Playwright
-      - name: Install Playwright
-        run: |
-          cd ubeer  # Accède au répertoire du frontend cloné
-          npx playwright install  # Installer Playwright et ses dépendances nécessaires
-
-
       # Étape 4 : Démarrer l'application frontend en arrière-plan
       - name: Start the frontend application
         run: |

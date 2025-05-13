@@ -28,7 +28,13 @@ jobs:
         run: |
           npm install
 
-      # Étape 4 : Exécuter les tests Playwright
+      # Étape 4 : Démarrer l'application en arrière-plan
+      - name: Start the application
+        run: |
+          nohup npm start &  # Démarre l'application en arrière-plan
+          sleep 10  # Attends que le serveur démarre
+
+      # Étape 5 : Exécuter les tests Playwright
       - name: Run Playwright Tests
         run: |
           npx playwright install  # Installer Playwright (si nécessaire)

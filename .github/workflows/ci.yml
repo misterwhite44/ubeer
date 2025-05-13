@@ -59,3 +59,9 @@ jobs:
         run: |
           npx playwright install  # Installer Playwright (si nécessaire)
           npx playwright test  # Exécuter les tests
+
+      # Étape 9 : Exécuter les tests unitaires du backend
+      - name: Run Backend Unit Tests
+        run: |
+          cd back_ubeers  # Accède au répertoire du backend
+          python3 -m unittest test_app.py  # Exécute les tests unitaires Flask

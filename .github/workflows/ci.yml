@@ -68,7 +68,7 @@ jobs:
       # Étape 3 : Installer les dépendances du frontend
       - name: Install frontend dependencies
         run: |
-          cd front_ubeers  # Accède au répertoire du frontend cloné
+          cd ubeer  # Accède au répertoire du frontend cloné
           npm install  # Installe les dépendances du frontend
 
       # Étape 4 : Démarrer l'application frontend en arrière-plan

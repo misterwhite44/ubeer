@@ -56,9 +56,8 @@ jobs:
       - name: Checkout frontend repository
         uses: actions/checkout@v2
         with:
-          repository: misterwhite44/front_ubeers  # Répertoire du frontend
-          path: front_ubeers  # Le répertoire du frontend cloné
-          ref: main
+          repository: misterwhite44/ubeer  # Répertoire du frontend
+          path: ubeer  # Le répertoire du frontend cloné
 
       # Étape 2 : Installer Node.js
       - name: Setup Node.js

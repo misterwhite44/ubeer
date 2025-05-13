@@ -23,15 +23,13 @@ jobs:
         with:
           node-version: '16'  # Remplace par la version souhaitée
 
-      # Étape 3 : Installer les dépendances du projet dans 'ubeer'
+      # Étape 3 : Installer les dépendances du projet
       - name: Install dependencies
         run: |
-          cd ubeer  # Naviguer dans le répertoire ubeer
           npm install
 
       # Étape 4 : Exécuter les tests Playwright
       - name: Run Playwright Tests
         run: |
-          cd ubeer  # Revenir dans le répertoire ubeer
           npx playwright install  # Installer Playwright (si nécessaire)
           npx playwright test  # Exécuter les tests

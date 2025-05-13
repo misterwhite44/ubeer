@@ -1,0 +1,37 @@
+name: Playwright E2E Tests
+
+on:
+  push:
+    branches:
+      - main  # Remplace par la branche que tu utilises si nécessaire
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  playwright-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : Checkout du code du dépôt
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Étape 2 : Installer Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Remplace par la version souhaitée
+
+      # Étape 3 : Installer les dépendances du projet dans 'ubeer'
+      - name: Install dependencies
+        run: |
+          cd ubeer  # Naviguer dans le répertoire ubeer
+          npm install
+
+      # Étape 4 : Exécuter les tests Playwright
+      - name: Run Playwright Tests
+        run: |
+          cd ubeer  # Revenir dans le répertoire ubeer
+          npx playwright install  # Installer Playwright (si nécessaire)
+          npx playwright test  # Exécuter les tests

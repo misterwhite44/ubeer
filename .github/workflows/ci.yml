@@ -33,7 +33,6 @@ jobs:
           cd back_ubeers  # Répertoire du backend
           nohup python3 app.py &  # Démarre Flask en arrière-plan avec python3
           sleep 10  # Attends que le serveur démarre
-          tail -f nohup.out  # Maintient le processus en arrière-plan actif
 
       # Étape 4 : Exécuter les tests unitaires du backend
       - name: Run Backend Unit Tests
@@ -72,14 +71,21 @@ jobs:
           cd ubeer  # Accède au répertoire du frontend cloné
           npm install  # Installe les dépendances du frontend
       
-      # Étape 4 : Démarrer l'application frontend en arrière-plan
+      # Étape 4 : Démarrer le backend pour les tests frontend
+      - name: Start Flask backend server for frontend tests
+        run: |
+          cd back_ubeers  # Répertoire du backend
+          nohup python3 app.py &  # Démarre Flask en arrière-plan avec python3 pour les tests frontend
+          sleep 10  # Attends que le serveur backend démarre
+
+      # Étape 5 : Démarrer l'application frontend en arrière-plan
       - name: Start the frontend application
         run: |
           cd ubeer  # Répertoire du frontend
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
 
-      # Étape 5 : Exécuter les tests Playwright
+      # Étape 6 : Exécuter les tests Playwright
       - name: Run Playwright Tests
         run: |
           cd ubeer  # Accède au répertoire du frontend

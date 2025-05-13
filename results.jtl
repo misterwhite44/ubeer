@@ -1,0 +1,1001 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1747141447862,389,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,6,6,http://localhost:5000/beers/,384,0,56
+1747141447902,352,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,6,6,http://localhost:5000/beers/,351,0,16
+1747141448001,255,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,6,6,http://localhost:5000/beers/,254,0,1
+1747141447862,397,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,6,6,http://localhost:5000/beers/,396,0,56
+1747141448102,330,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,330,0,1
+1747141448200,260,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,8,8,http://localhost:5000/beers/,260,0,1
+1747141448257,206,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,8,8,http://localhost:5000/beers/,206,0,1
+1747141448257,238,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,8,8,http://localhost:5000/beers/,237,0,1
+1747141448257,237,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,237,0,1
+1747141448400,279,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141448432,261,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,1
+1747141448464,233,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,232,0,2
+1747141448495,258,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141448461,294,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,294,0,1
+1747141448601,229,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,229,0,1
+1747141448680,309,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,309,0,1
+1747141448754,252,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,252,0,1
+1747141448697,315,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,315,0,2
+1747141448694,318,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,318,0,1
+1747141448756,279,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,279,0,1
+1747141448300,773,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,773,0,1
+1747141448260,823,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,822,0,1
+1747141449007,258,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141448990,278,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,0
+1747141449013,287,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,287,0,1
+1747141449013,302,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,302,0,1
+1747141449036,280,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,280,0,1
+1747141449083,251,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,2
+1747141448495,856,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,856,0,1
+1747141448499,913,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,913,0,1
+1747141449268,185,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,185,0,1
+1747141449266,256,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,1
+1747141449316,245,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,244,0,1
+1747141449301,293,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,0
+1747141449317,283,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,283,0,1
+1747141449352,263,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,263,0,1
+1747141449413,263,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,263,0,1
+1747141449454,242,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141449522,284,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,284,0,1
+1747141449561,276,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,276,0,1
+1747141449601,249,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,249,0,0
+1747141449595,259,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,2
+1747141449677,195,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,195,0,1
+1747141448831,1056,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,1056,0,1
+1747141449807,219,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,218,0,1
+1747141449854,218,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,217,0,1
+1747141449851,247,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141449838,261,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,0
+1747141449873,268,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,268,0,2
+1747141449075,1077,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,1077,0,1
+1747141450026,149,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,149,0,1
+1747141450072,274,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141450098,268,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,267,0,1
+1747141450153,240,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,240,0,1
+1747141450100,308,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,308,0,1
+1747141450141,268,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,268,0,1
+1747141449335,1079,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,1078,0,1
+1747141449615,815,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,815,0,1
+1747141449696,741,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,741,0,1
+1747141450347,195,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,195,0,1
+1747141450366,260,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141450394,262,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,1
+1747141450408,248,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,2
+1747141450409,251,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,2
+1747141449888,791,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,791,0,1
+1747141450542,234,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,234,0,1
+1747141450176,668,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,668,0,1
+1747141450656,220,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,1
+1747141450626,251,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141450656,275,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,275,0,1
+1747141450661,271,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,271,0,1
+1747141450776,202,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,202,0,1
+1747141450845,149,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,149,0,1
+1747141450877,293,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,1
+1747141450877,294,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,294,0,1
+1747141450933,271,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,271,0,1
+1747141450932,286,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,286,0,1
+1747141450994,231,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,231,0,1
+1747141450414,838,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,838,0,1
+1747141450438,878,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,878,0,1
+1747141450430,972,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,972,0,2
+1747141451171,247,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,1
+1747141451172,275,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141451219,242,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141451204,274,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141451226,255,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,1
+1747141450680,848,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,847,0,1
+1747141451403,170,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,170,0,1
+1747141451419,272,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,1
+1747141451479,246,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141451447,280,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,280,0,1
+1747141451462,289,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,288,0,1
+1747141451528,230,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,230,0,1
+1747141451574,259,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,1
+1747141451692,228,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141451725,214,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,214,0,1
+1747141451728,240,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,240,0,0
+1747141451751,218,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,218,0,1
+1747141450979,1010,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,1010,0,1
+1747141451834,330,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,330,0,1
+1747141451921,244,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,244,0,1
+1747141451969,231,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,231,0,1
+1747141451940,277,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,276,0,1
+1747141451969,248,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,1
+1747141451317,916,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,916,0,1
+1747141451253,1111,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,1111,0,1
+1747141452165,328,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,328,0,1
+1747141452165,360,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,360,0,1
+1747141452201,343,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,343,0,0
+1747141451481,1063,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,1063,0,1
+1747141452217,345,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,345,0,1
+1747141452218,345,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,345,0,0
+1747141451758,833,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,833,0,1
+1747141451989,697,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,697,0,1
+1747141452494,294,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,1
+1747141452563,240,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,240,0,1
+1747141452545,260,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,1
+1747141452526,293,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,0
+1747141452564,257,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,257,0,1
+1747141452365,516,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,515,0,1
+1747141452687,216,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,216,0,0
+1747141452234,676,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,676,0,1
+1747141452820,253,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141452804,285,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,284,0,1
+1747141452788,320,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,320,0,1
+1747141452805,315,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,315,0,1
+1747141452881,245,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,245,0,1
+1747141452545,622,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,622,0,1
+1747141452591,655,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,654,0,1
+1747141453109,216,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,216,0,1
+1747141453074,272,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,1
+1747141453089,262,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,1
+1747141453127,238,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,237,0,1
+1747141453120,250,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141453246,196,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,196,0,1
+1747141453326,231,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,231,0,0
+1747141453346,213,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,213,0,1
+1747141453365,213,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,212,0,2
+1747141453371,220,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,1
+1747141453351,256,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,1
+1747141452904,706,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,706,0,1
+1747141452822,792,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,792,0,2
+1747141452910,718,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,718,0,1
+1747141453558,230,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,230,0,1
+1747141453578,212,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,212,0,0
+1747141453559,234,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,234,0,1
+1747141453591,233,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,233,0,1
+1747141453607,222,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,222,0,1
+1747141453168,679,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,678,0,1
+1747141453443,569,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,569,0,0
+1747141453788,255,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,255,0,1
+1747141453825,220,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,1
+1747141453791,303,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,303,0,1
+1747141453794,301,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,300,0,1
+1747141453830,269,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,269,0,1
+1747141454012,160,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,160,0,1
+1747141454095,200,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,199,0,0
+1747141454100,247,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,1
+1747141454044,320,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,320,0,0
+1747141454045,320,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,320,0,2
+1747141453615,757,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,757,0,1
+1747141454172,221,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,221,0,1
+1747141453628,770,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,769,0,1
+1747141453611,795,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,795,0,1
+1747141454295,269,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,269,0,1
+1747141454347,280,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,280,0,2
+1747141454373,255,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,255,0,1
+1747141454366,263,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,263,0,1
+1747141454365,269,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,269,0,1
+1747141453847,815,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,815,0,1
+1747141454095,598,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,598,0,1
+1747141454629,218,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,218,0,1
+1747141454627,253,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141454565,335,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,334,0,1
+1747141454634,269,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,269,0,2
+1747141454629,295,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,295,0,1
+1747141454407,555,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,554,0,1
+1747141454393,569,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,569,0,1
+1747141454398,682,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,681,0,1
+1747141454848,272,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,1
+1747141454881,256,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,1
+1747141454900,262,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,262,0,1
+1747141454924,239,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,238,0,1
+1747141454903,302,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,302,0,2
+1747141454962,362,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,362,0,1
+1747141455080,244,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,244,0,1
+1747141455120,238,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,238,0,2
+1747141455206,167,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,167,0,0
+1747141455138,253,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,0
+1747141455324,238,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,238,0,1
+1747141455324,254,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,1
+1747141455392,220,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,219,0,0
+1747141455358,270,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,1
+1747141454694,935,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,935,0,1
+1747141455373,258,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141454663,982,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,982,0,1
+1747141455563,159,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,159,0,0
+1747141455578,219,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,219,0,1
+1747141455629,184,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,184,0,1
+1747141455612,229,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141455629,212,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,212,0,1
+1747141454963,896,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,896,0,1
+1747141455163,776,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,776,0,1
+1747141455723,281,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,281,0,1
+1747141455163,863,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,863,0,0
+1747141455841,204,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,204,0,1
+1747141455813,283,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,283,0,1
+1747141455798,300,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,300,0,1
+1747141455841,278,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141455940,271,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,271,0,0
+1747141456005,273,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,273,0,0
+1747141456045,273,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,273,0,1
+1747141456026,318,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,318,0,1
+1747141456096,253,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,252,0,1
+1747141456120,287,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,286,0,1
+1747141456099,309,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,308,0,1
+1747141456278,202,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,202,0,1
+1747141456318,180,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,180,0,1
+1747141456344,249,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,249,0,1
+1747141456349,262,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,262,0,1
+1747141456407,258,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,2
+1747141456408,313,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,313,0,2
+1747141456481,267,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,267,0,1
+1747141456498,250,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141456594,196,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,196,0,1
+1747141456612,232,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,232,0,0
+1747141456665,244,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,243,0,1
+1747141456722,223,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,222,0,1
+1747141456748,228,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141456791,248,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,1
+1747141455632,1468,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,1468,0,1
+1747141456845,277,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,277,0,1
+1747141456909,213,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,213,0,1
+1747141456945,179,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,179,0,0
+1747141455645,1487,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,1487,0,1
+1747141457040,167,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,167,0,0
+1747141456976,303,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,303,0,1
+1747141457123,244,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,244,0,1
+1747141457101,296,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,295,0,1
+1747141457122,291,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,291,0,2
+1747141457132,326,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,326,0,1
+1747141457208,265,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,265,0,0
+1747141457280,226,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,226,0,0
+1747141457367,242,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141457397,230,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,230,0,1
+1747141457413,273,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,273,0,1
+1747141457458,245,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,245,0,1
+1747141457474,303,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,303,0,1
+1747141457506,271,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,271,0,1
+1747141457610,182,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,182,0,1
+1747141455859,1987,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,1987,0,1
+1747141457627,330,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,330,0,1
+1747141457686,274,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141457777,219,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,219,0,1
+1747141457704,307,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,1
+1747141457792,223,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,223,0,1
+1747141456212,1815,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,1814,0,1
+1747141457957,228,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,2
+1747141457961,237,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,237,0,1
+1747141458016,202,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,202,0,1
+1747141457997,249,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,249,0,0
+1747141458011,240,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,239,0,1
+1747141456748,1516,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,1516,0,1
+1747141457125,1333,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,1333,0,1
+1747141458199,259,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,1
+1747141458185,275,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,275,0,1
+1747141458247,264,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,264,0,1
+1747141458218,293,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,1
+1747141458251,263,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,262,0,1
+1747141457777,760,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,759,0,1
+1747141457847,698,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,698,0,1
+1747141458461,181,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,181,0,0
+1747141458459,256,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,1
+1747141458459,321,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,321,0,1
+1747141458514,282,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,282,0,1
+1747141458511,297,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,297,0,1
+1747141458642,183,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,183,0,1
+1747141458545,298,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,298,0,1
+1747141458027,824,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,824,0,1
+1747141458716,262,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,262,0,1
+1747141458780,226,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,225,0,1
+1747141458796,215,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,214,0,1
+1747141458809,229,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,229,0,1
+1747141458826,215,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,215,0,0
+1747141458265,801,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,801,0,1
+1747141459011,254,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,1
+1747141458978,289,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,289,0,1
+1747141459042,244,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,243,0,1
+1747141458511,790,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,790,0,1
+1747141459039,269,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,269,0,0
+1747141459006,304,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,304,0,1
+1747141458537,788,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,788,0,1
+1747141458843,504,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,504,0,1
+1747141458852,502,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,501,0,1
+1747141459309,239,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,239,0,1
+1747141459286,274,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,273,0,1
+1747141459266,296,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,295,0,1
+1747141459268,298,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,298,0,0
+1747141459302,281,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,281,0,1
+1747141459067,538,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,538,0,1
+1747141459548,225,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,224,0,1
+1747141459560,242,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141459584,249,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,249,0,0
+1747141459562,274,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141459567,284,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,284,0,1
+1747141459773,142,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,142,0,1
+1747141459354,571,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,570,0,2
+1747141459347,613,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,613,0,1
+1747141459311,673,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,673,0,1
+1747141459325,758,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,758,0,1
+1747141459836,278,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141459833,282,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,282,0,1
+1747141459916,251,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,0
+1747141459802,365,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,365,0,1
+1747141459851,320,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,319,0,1
+1747141459984,238,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,238,0,0
+1747141460083,156,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,155,0,1
+1747141460114,297,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,297,0,1
+1747141460168,244,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,244,0,1
+1747141460115,313,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,313,0,1
+1747141460168,297,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,297,0,1
+1747141460171,296,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,296,0,1
+1747141459606,895,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,894,0,1
+1747141460412,247,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,1
+1747141460465,209,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,209,0,1
+1747141460413,289,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,289,0,1
+1747141460428,289,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,289,0,1
+1747141460467,254,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,1
+1747141459925,818,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,817,0,1
+1747141459961,792,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,792,0,0
+1747141460659,242,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141460674,257,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,1
+1747141460702,229,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,229,0,1
+1747141460721,229,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,229,0,1
+1747141460222,744,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,744,0,1
+1747141460717,259,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,1
+1747141460239,743,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,743,0,1
+1747141460501,517,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,517,0,1
+1747141460976,217,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,217,0,1
+1747141460901,295,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,295,0,1
+1747141460931,307,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,1
+1747141460931,309,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,309,0,1
+1747141460950,291,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,291,0,1
+1747141460743,514,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,514,0,1
+1747141460754,512,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,511,0,1
+1747141461194,246,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,0
+1747141461240,228,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141461238,233,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,233,0,0
+1747141461196,304,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,304,0,1
+1747141461242,263,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,263,0,0
+1747141461018,519,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,519,0,1
+1747141460966,608,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,608,0,1
+1747141460982,599,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,599,0,1
+1747141461440,232,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,232,0,1
+1747141461469,260,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141461501,253,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141461505,264,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,264,0,1
+1747141461472,299,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,299,0,1
+1747141461581,225,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,225,0,1
+1747141461672,158,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,158,0,1
+1747141461729,211,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,211,0,1
+1747141461770,254,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,0
+1747141461754,270,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,1
+1747141461807,236,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,236,0,0
+1747141461772,318,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,318,0,1
+1747141461941,178,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,178,0,1
+1747141461266,861,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,861,0,1
+1747141462043,218,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,218,0,1
+1747141462024,268,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,267,0,1
+1747141462024,304,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,304,0,1
+1747141461258,1077,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,1077,0,0
+1747141462090,292,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,292,0,1
+1747141462119,264,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,264,0,1
+1747141462127,260,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141462262,277,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,277,0,0
+1747141462329,267,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,267,0,0
+1747141462292,305,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,304,0,1
+1747141462382,246,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141462335,296,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,296,0,1
+1747141462387,266,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,2
+1747141461538,1291,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,1291,0,1
+1747141462540,290,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,290,0,1
+1747141461574,1274,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,1274,0,1
+1747141462597,285,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,285,0,0
+1747141462632,271,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,271,0,1
+1747141462597,307,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,0
+1747141462628,278,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141461831,1125,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,1125,0,0
+1747141462829,227,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,227,0,2
+1747141462831,283,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,283,0,0
+1747141462849,266,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,1
+1747141462883,252,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,252,0,1
+1747141462904,274,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141462957,354,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,354,0,1
+1747141463116,220,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,0
+1747141463057,294,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,294,0,0
+1747141463135,219,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,219,0,1
+1747141463114,261,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,1
+1747141462383,1008,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,1008,0,1
+1747141462653,765,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,765,0,1
+1747141463311,236,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,236,0,1
+1747141463376,215,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,215,0,1
+1747141463336,255,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,255,0,1
+1747141463352,265,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,265,0,0
+1747141463355,268,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,268,0,0
+1747141462906,759,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,759,0,1
+1747141462904,783,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,783,0,1
+1747141463547,147,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,147,0,1
+1747141463624,242,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,241,0,0
+1747141463618,250,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141463591,277,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,277,0,1
+1747141463591,302,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,302,0,1
+1747141463178,723,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,723,0,1
+1747141463666,259,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,1
+1747141463868,208,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,208,0,1
+1747141463893,248,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,1
+1747141463869,273,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,273,0,0
+1747141463866,283,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,283,0,1
+1747141463902,270,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,0
+1747141463392,788,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,788,0,0
+1747141463418,770,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,770,0,1
+1747141463688,593,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,593,0,1
+1747141463694,630,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,630,0,2
+1747141464149,216,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,216,0,1
+1747141464077,291,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,291,0,0
+1747141464143,278,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141464141,280,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,280,0,1
+1747141464172,270,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,1
+1747141464281,225,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,225,0,1
+1747141464325,250,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141464366,266,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,1
+1747141464421,225,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,225,0,1
+1747141464369,307,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,0
+1747141464421,266,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,1
+1747141464507,187,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,187,0,1
+1747141463925,825,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,825,0,1
+1747141464575,291,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,291,0,1
+1747141464676,266,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,1
+1747141464442,540,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,540,0,1
+1747141464647,347,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,347,0,0
+1747141464687,314,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,314,0,2
+1747141464632,371,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,371,0,1
+1747141464180,889,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,889,0,1
+1747141464189,890,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,890,0,1
+1747141464942,254,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,0
+1747141465002,226,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,226,0,1
+1747141464994,262,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,262,0,2
+1747141465004,286,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,286,0,1
+1747141464982,309,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,309,0,1
+1747141465080,251,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,1
+1747141465196,210,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,210,0,1
+1747141465228,247,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,0
+1747141465256,250,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141465290,256,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,1
+1747141465331,220,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,1
+1747141465406,164,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,164,0,0
+1747141464695,915,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,915,0,1
+1747141464750,868,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,867,0,1
+1747141465476,266,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,0
+1747141465551,238,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,238,0,1
+1747141465546,254,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,1
+1747141465506,296,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,296,0,1
+1747141465571,233,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,233,0,0
+1747141464867,949,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,948,0,1
+1747141465618,340,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,339,0,1
+1747141465742,260,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141465803,213,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,213,0,1
+1747141465789,236,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,236,0,1
+1747141465801,240,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,239,0,1
+1747141465958,145,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,145,0,1
+1747141466003,220,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,1
+1747141466016,251,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,1
+1747141466025,259,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,1
+1747141466103,211,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,210,0,1
+1747141466041,274,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141465069,1257,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,1257,0,1
+1747141465291,1051,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,1050,0,1
+1747141465611,921,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,921,0,1
+1747141466314,247,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,1
+1747141466224,337,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,337,0,1
+1747141466268,315,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,314,0,0
+1747141466284,301,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,301,0,1
+1747141466315,278,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141465804,810,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,810,0,1
+1747141465816,805,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,805,0,1
+1747141466532,231,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,231,0,1
+1747141466561,265,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,264,0,1
+1747141466561,265,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,265,0,1
+1747141466583,275,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141466585,276,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,276,0,2
+1747141466764,174,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,174,0,0
+1747141466326,620,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,620,0,1
+1747141466858,249,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,249,0,1
+1747141466342,766,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,766,0,1
+1747141466826,311,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,311,0,1
+1747141466827,311,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,310,0,0
+1747141466862,283,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,283,0,1
+1747141466938,228,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141466593,605,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,605,0,1
+1747141466615,611,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,611,0,1
+1747141466621,656,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,656,0,1
+1747141467108,229,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,229,0,1
+1747141467109,285,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,285,0,1
+1747141467138,257,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,257,0,1
+1747141467166,250,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141467138,317,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,317,0,1
+1747141467226,338,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,338,0,1
+1747141467394,247,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141467338,316,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,316,0,1
+1747141467455,214,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,214,0,2
+1747141467395,277,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,277,0,1
+1747141467416,274,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,2
+1747141466947,787,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,787,0,1
+1747141467566,244,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,244,0,0
+1747141467691,168,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,168,0,1
+1747141467641,259,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,1
+1747141467669,233,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,233,0,2
+1747141467655,249,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,249,0,2
+1747141467811,221,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,221,0,1
+1747141467901,220,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,1
+1747141467860,264,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,264,0,1
+1747141467199,946,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,946,0,1
+1747141467904,243,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,243,0,1
+1747141467277,912,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,912,0,1
+1747141467906,290,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,289,0,1
+1747141467145,1051,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,1051,0,1
+1747141468033,239,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,239,0,0
+1747141468122,211,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,211,0,0
+1747141468124,248,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,1
+1747141468146,258,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141468147,258,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141468198,258,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141468272,257,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,257,0,1
+1747141468372,173,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,173,0,1
+1747141468333,300,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,300,0,1
+1747141468456,199,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,199,0,1
+1747141468405,288,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,288,0,1
+1747141468404,306,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,306,0,1
+1747141468530,248,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,0
+1747141468633,202,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,202,0,1
+1747141468545,323,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,323,0,0
+1747141468693,263,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,263,0,1
+1747141468655,317,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,317,0,1
+1747141468778,224,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,224,0,1
+1747141468710,293,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,1
+1747141468835,187,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,187,0,1
+1747141467673,1357,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,1357,0,1
+1747141467735,1303,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,1303,0,1
+1747141468868,307,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,1
+1747141468956,258,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141469022,215,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,214,0,1
+1747141468972,281,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,281,0,0
+1747141469003,270,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,1
+1747141469215,174,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,174,0,0
+1747141469175,276,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,276,0,1
+1747141468191,1262,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,1262,0,0
+1747141469237,233,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,233,0,0
+1747141469273,228,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141469253,249,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,1
+1747141468196,1313,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,1313,0,1
+1747141469389,307,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,1
+1747141469451,260,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141469453,262,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,1
+1747141469470,265,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,264,0,0
+1747141469501,240,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,240,0,1
+1747141469031,748,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,748,0,1
+1747141469003,789,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,789,0,1
+1747141469040,771,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,770,0,1
+1747141469735,241,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,240,0,1
+1747141469715,261,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,1
+1747141469712,298,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,298,0,1
+1747141469741,271,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,1
+1747141469696,334,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,334,0,1
+1747141469811,369,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,369,0,1
+1747141469976,248,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,1
+1747141470030,196,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,195,0,1
+1747141469976,264,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,264,0,1
+1747141470012,250,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141469502,768,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,768,0,0
+1747141469510,767,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,767,0,0
+1747141470180,252,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,1
+1747141470225,224,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,224,0,1
+1747141470241,254,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,0
+1747141470226,270,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,1
+1747141470263,238,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,238,0,0
+1747141470432,161,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,161,0,1
+1747141470449,232,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,232,0,1
+1747141470501,198,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,198,0,1
+1747141470497,221,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,221,0,0
+1747141470496,234,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,234,0,1
+1747141469779,986,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,986,0,1
+1747141469792,979,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-2,text,false,,29163,122,10,10,http://localhost:5000/beers/,979,0,1
+1747141470593,239,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,239,0,1
+1747141470682,164,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,164,0,0
+1747141470699,235,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,235,0,1
+1747141470730,245,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,245,0,1
+1747141470718,290,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,289,0,0
+1747141470765,312,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,312,0,1
+1747141470772,307,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,0
+1747141470847,293,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,0
+1747141470934,206,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,206,0,1
+1747141470015,1228,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,1228,0,1
+1747141470976,269,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,269,0,0
+1747141471008,311,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,311,0,1
+1747141471077,242,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141471080,243,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,243,0,0
+1747141471141,235,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,235,0,0
+1747141471244,203,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,203,0,0
+1747141471320,237,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,237,0,0
+1747141471245,314,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,314,0,1
+1747141471323,253,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141471319,276,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,276,0,1
+1747141471376,260,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141470270,1373,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,1372,0,1
+1747141470278,1407,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,1407,0,1
+1747141471447,244,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,244,0,1
+1747141471559,228,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141471576,241,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,241,0,1
+1747141471557,275,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,275,0,1
+1747141471643,192,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,192,0,1
+1747141470832,1074,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,1074,0,1
+1747141471787,241,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,240,0,1
+1747141471141,897,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,897,0,0
+1747141471817,265,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,265,0,1
+1747141471836,247,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,1
+1747141471832,273,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,1
+1747141471596,509,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,508,0,1
+1747141472028,167,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,166,0,2
+1747141472038,253,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141472082,227,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,227,0,1
+1747141472083,289,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,289,0,1
+1747141472105,272,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,1
+1747141472195,255,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,255,0,1
+1747141471636,823,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,823,0,1
+1747141471692,859,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,859,0,1
+1747141472309,310,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,310,0,1
+1747141472291,331,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,331,0,1
+1747141471685,943,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,942,0,1
+1747141472373,272,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,1
+1747141472377,286,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,286,0,1
+1747141472450,217,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,217,0,1
+1747141472460,208,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,208,0,1
+1747141472552,267,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,267,0,0
+1747141472620,255,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,1
+1747141472622,253,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141472628,264,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,263,0,1
+1747141472645,251,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,1
+1747141471906,1040,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,1040,0,1
+1747141472819,152,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,151,0,0
+1747141472895,231,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,231,0,1
+1747141472874,286,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,286,0,1
+1747141472891,270,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,0
+1747141472874,317,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,317,0,1
+1747141472945,247,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,1
+1747141472105,1095,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,1095,0,1
+1747141473127,257,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,257,0,0
+1747141473199,198,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,198,0,1
+1747141473160,253,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141473192,221,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,221,0,0
+1747141473162,272,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,0
+1747141472667,778,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,778,0,1
+1747141472669,785,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,785,0,1
+1747141472664,799,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,799,0,1
+1747141472971,555,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,555,0,0
+1747141473398,231,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,230,0,0
+1747141473434,223,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,223,0,1
+1747141473413,245,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,245,0,1
+1747141473384,301,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,301,0,1
+1747141473413,278,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141473192,530,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,529,0,1
+1747141473629,270,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,1
+1747141473685,246,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141473659,273,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,273,0,0
+1747141473692,241,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,241,0,0
+1747141473657,296,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,296,0,0
+1747141473444,581,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-6,text,false,,29163,122,10,10,http://localhost:5000/beers/,581,0,1
+1747141473527,616,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,616,0,0
+1747141473900,272,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,0
+1747141473454,723,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,722,0,0
+1747141473934,275,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,275,0,1
+1747141473933,277,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,277,0,0
+1747141473463,749,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,749,0,1
+1747141473953,271,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,271,0,1
+1747141473931,293,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,1
+1747141474025,352,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,351,0,1
+1747141474172,246,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141474177,257,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,257,0,0
+1747141474143,293,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,293,0,1
+1747141474210,226,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,226,0,1
+1747141473722,757,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,757,0,1
+1747141474377,250,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,0
+1747141474418,223,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,223,0,1
+1747141474436,222,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,222,0,0
+1747141474434,228,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141474210,485,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,485,0,1
+1747141474224,481,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,481,0,1
+1747141474213,497,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,497,0,0
+1747141474225,492,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,492,0,0
+1747141474627,240,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,239,0,1
+1747141474436,450,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,449,0,0
+1747141474659,269,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,269,0,0
+1747141474642,292,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,292,0,0
+1747141474662,274,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141474867,251,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,0
+1747141474886,251,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,251,0,1
+1747141474479,663,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,10,10,http://localhost:5000/beers/,663,0,1
+1747141474928,246,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141474934,256,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,1
+1747141474937,255,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,254,0,1
+1747141475119,181,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,181,0,0
+1747141475137,228,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141475142,246,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,246,0,1
+1747141475174,267,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,267,0,1
+1747141475190,252,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,252,0,1
+1747141475300,162,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,162,0,1
+1747141475365,153,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,153,0,1
+1747141475389,294,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,294,0,0
+1747141475462,226,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,226,0,1
+1747141475442,277,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,277,0,1
+1747141475441,278,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,278,0,1
+1747141475519,203,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,203,0,0
+1747141474710,1025,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,1025,0,0
+1747141474706,1035,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,1035,0,1
+1747141474696,1054,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,1054,0,1
+1747141474717,1038,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,1038,0,1
+1747141475192,610,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-8,text,false,,29163,122,10,10,http://localhost:5000/beers/,610,0,1
+1747141475722,208,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,208,0,1
+1747141475683,266,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,265,0,1
+1747141475719,247,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,247,0,1
+1747141475688,280,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,280,0,1
+1747141475719,266,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,0
+1747141475803,237,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,237,0,1
+1747141475968,241,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,241,0,0
+1747141475966,262,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,262,0,1
+1747141475949,283,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,283,0,0
+1747141476040,221,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,221,0,1
+1747141475930,333,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,333,0,1
+1747141475735,618,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,618,0,1
+1747141476209,243,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,243,0,1
+1747141476232,239,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,239,0,1
+1747141476228,258,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,258,0,1
+1747141476264,257,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,256,0,0
+1747141476261,260,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141475750,833,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,833,0,1
+1747141475742,841,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,841,0,1
+1747141475755,844,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,840,0,1
+1747141476471,166,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,166,0,1
+1747141476452,232,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,232,0,1
+1747141476521,210,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,210,0,0
+1747141476486,261,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,260,0,1
+1747141476521,227,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,227,0,0
+1747141476583,203,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,203,0,1
+1747141476637,281,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,281,0,1
+1747141476747,188,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,188,0,0
+1747141476731,221,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,221,0,1
+1747141476685,282,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,282,0,0
+1747141476599,373,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,372,0,0
+1747141475985,1000,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,1000,0,1
+1747141476935,255,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,255,0,1
+1747141476918,274,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,274,0,1
+1747141476972,234,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,234,0,1
+1747141476952,255,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,255,0,1
+1747141476967,266,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,1
+1747141476353,903,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,903,0,1
+1747141476584,694,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,694,0,0
+1747141476787,619,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,10,10,http://localhost:5000/beers/,619,0,0
+1747141477208,229,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,229,0,1
+1747141477190,266,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,266,0,1
+1747141477192,270,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,270,0,0
+1747141477206,272,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,10,10,http://localhost:5000/beers/,272,0,1
+1747141477233,261,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,261,0,1
+1747141476748,781,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,781,0,1
+1747141477406,188,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,188,0,1
+1747141477457,243,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,243,0,1
+1747141477463,238,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,238,0,1
+1747141477494,241,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,241,0,1
+1747141477438,297,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,297,0,1
+1747141477529,225,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,10,10,http://localhost:5000/beers/,225,0,1
+1747141477595,220,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,220,0,1
+1747141476985,900,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,900,0,1
+1747141477700,325,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,325,0,1
+1747141477735,292,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,292,0,1
+1747141477735,304,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,304,0,1
+1747141477816,230,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,230,0,1
+1747141477701,345,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,345,0,1
+1747141477278,811,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,811,0,1
+1747141477256,839,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,839,0,1
+1747141477479,632,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,632,0,0
+1747141478028,259,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,259,0,0
+1747141478047,242,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,0
+1747141478040,253,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,253,0,1
+1747141478027,303,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,303,0,1
+1747141478046,284,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,284,0,1
+1747141477754,591,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,591,0,0
+1747141477887,483,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,483,0,0
+1747141478289,440,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,440,0,1
+1747141478287,457,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,457,0,1
+1747141478294,481,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,481,0,1
+1747141478330,458,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,458,0,1
+1747141478330,460,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,460,0,1
+1747141478729,242,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141478745,228,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,0
+1747141478775,223,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,223,0,1
+1747141478788,223,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,223,0,1
+1747141478791,240,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,240,0,0
+1747141478112,996,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,996,0,1
+1747141478097,1019,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,1019,0,1
+1747141478090,1027,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,1026,0,1
+1747141478973,248,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,248,0,1
+1747141478971,251,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,250,0,1
+1747141479011,275,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,275,0,0
+1747141478998,292,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,292,0,1
+1747141479031,303,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,302,0,1
+1747141479116,234,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,10,10,http://localhost:5000/beers/,234,0,1
+1747141479117,250,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,10,10,http://localhost:5000/beers/,249,0,0
+1747141479286,242,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,242,0,1
+1747141479222,308,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,307,0,0
+1747141479334,225,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,225,0,0
+1747141479222,347,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,347,0,0
+1747141479290,280,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,280,0,1
+1747141478346,1238,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,10,10,http://localhost:5000/beers/,1238,0,1
+1747141478371,1222,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,10,10,http://localhost:5000/beers/,1222,0,0
+1747141479528,218,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,218,0,1
+1747141479530,232,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,232,0,0
+1747141479569,227,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,227,0,1
+1747141479570,228,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,1
+1747141479559,243,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,243,0,1
+1747141479108,713,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,10,10,http://localhost:5000/beers/,713,0,1
+1747141479746,213,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,213,0,1
+1747141479796,194,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,194,0,1
+1747141479762,228,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,228,0,0
+1747141479798,224,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,10,10,http://localhost:5000/beers/,224,0,0
+1747141479802,221,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,221,0,1
+1747141479350,681,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,10,10,http://localhost:5000/beers/,681,0,1
+1747141479367,666,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,10,10,http://localhost:5000/beers/,666,0,0
+1747141479959,149,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,10,10,http://localhost:5000/beers/,148,0,1
+1747141479990,206,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,10,10,http://localhost:5000/beers/,206,0,1
+1747141479991,231,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,10,10,http://localhost:5000/beers/,231,0,0
+1747141480023,225,GET /beers,200,OK,10 Users x 100 Iterations 1-2,text,true,,3919,122,10,10,http://localhost:5000/beers/,225,0,0
+1747141480023,253,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,9,9,http://localhost:5000/beers/,253,0,0
+1747141480108,168,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,9,9,http://localhost:5000/beers/,168,0,0
+1747141480196,173,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,9,9,http://localhost:5000/beers/,173,0,1
+1747141479584,792,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-5,text,false,,29163,122,9,9,http://localhost:5000/beers/,791,0,1
+1747141479593,788,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-3,text,false,,29163,122,9,9,http://localhost:5000/beers/,788,0,1
+1747141480222,231,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,9,9,http://localhost:5000/beers/,231,0,0
+1747141480276,235,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,9,9,http://localhost:5000/beers/,235,0,1
+1747141480369,248,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,9,9,http://localhost:5000/beers/,248,0,1
+1747141480276,343,GET /beers,200,OK,10 Users x 100 Iterations 1-6,text,true,,3919,122,9,9,http://localhost:5000/beers/,343,0,1
+1747141480382,238,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,9,9,http://localhost:5000/beers/,238,0,1
+1747141480376,275,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,275,0,0
+1747141480454,199,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,199,0,0
+1747141479821,862,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,8,8,http://localhost:5000/beers/,861,0,0
+1747141480034,666,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,8,8,http://localhost:5000/beers/,666,0,0
+1747141480032,700,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,8,8,http://localhost:5000/beers/,699,0,0
+1747141480620,275,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,275,0,1
+1747141480653,258,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,258,0,1
+1747141480652,262,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,262,0,0
+1747141480617,302,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,8,8,http://localhost:5000/beers/,302,0,1
+1747141480683,240,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,8,8,http://localhost:5000/beers/,240,0,0
+1747141480511,445,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,8,8,http://localhost:5000/beers/,445,0,1
+1747141480732,259,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,8,8,http://localhost:5000/beers/,259,0,0
+1747141480700,385,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,8,8,http://localhost:5000/beers/,385,0,0
+1747141480895,257,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,257,0,1
+1747141480923,258,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,8,8,http://localhost:5000/beers/,258,0,1
+1747141480912,284,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,284,0,1
+1747141480914,283,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,283,0,1
+1747141480919,283,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,8,8,http://localhost:5000/beers/,282,0,1
+1747141481085,174,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,8,8,http://localhost:5000/beers/,174,0,0
+1747141481198,220,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,220,0,0
+1747141481196,237,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,237,0,1
+1747141481153,285,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,285,0,0
+1747141481182,285,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,8,8,http://localhost:5000/beers/,285,0,0
+1747141481259,211,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,8,8,http://localhost:5000/beers/,211,0,1
+1747141480956,542,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,8,8,http://localhost:5000/beers/,542,0,1
+1747141480991,514,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,8,8,http://localhost:5000/beers/,514,0,1
+1747141481419,224,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,224,0,0
+1747141481438,218,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,218,0,1
+1747141481467,193,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,8,8,http://localhost:5000/beers/,193,0,1
+1747141481470,208,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,8,8,http://localhost:5000/beers/,208,0,1
+1747141481202,489,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,8,8,http://localhost:5000/beers/,489,0,0
+1747141481433,438,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,438,0,1
+1747141481656,252,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,252,0,1
+1747141481643,266,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,266,0,1
+1747141481678,249,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,8,8,http://localhost:5000/beers/,249,0,1
+1747141481498,432,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,8,8,http://localhost:5000/beers/,432,0,1
+1747141481660,277,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,8,8,http://localhost:5000/beers/,277,0,1
+1747141481505,433,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,8,8,http://localhost:5000/beers/,433,0,1
+1747141481871,247,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,247,0,0
+1747141481692,466,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-9,text,false,,29163,122,8,8,http://localhost:5000/beers/,465,0,0
+1747141481908,264,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,264,0,1
+1747141481910,276,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,276,0,0
+1747141481930,263,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,8,8,http://localhost:5000/beers/,263,0,1
+1747141481928,267,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,8,8,http://localhost:5000/beers/,267,0,0
+1747141482118,224,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,223,0,1
+1747141482158,239,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,8,8,http://localhost:5000/beers/,239,0,0
+1747141482186,227,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,227,0,1
+1747141482193,224,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,8,8,http://localhost:5000/beers/,224,0,1
+1747141482172,272,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,271,0,1
+1747141481939,557,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,8,8,http://localhost:5000/beers/,557,0,1
+1747141481938,665,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,8,8,http://localhost:5000/beers/,665,0,1
+1747141482342,299,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,299,0,1
+1747141482413,231,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,231,0,1
+1747141482398,247,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,8,8,http://localhost:5000/beers/,247,0,0
+1747141482444,234,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,234,0,1
+1747141482417,265,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,8,8,http://localhost:5000/beers/,265,0,1
+1747141482496,228,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,8,8,http://localhost:5000/beers/,228,0,1
+1747141482603,151,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,8,8,http://localhost:5000/beers/,151,0,1
+1747141482641,249,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,249,0,1
+1747141482644,246,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,246,0,1
+1747141482678,241,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,240,0,1
+1747141482645,280,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,8,8,http://localhost:5000/beers/,280,0,0
+1747141482725,221,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,8,8,http://localhost:5000/beers/,221,0,0
+1747141482195,765,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,8,8,http://localhost:5000/beers/,765,0,1
+1747141482890,191,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,8,8,http://localhost:5000/beers/,191,0,0
+1747141482889,208,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,8,8,http://localhost:5000/beers/,208,0,1
+1747141482945,207,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,8,8,http://localhost:5000/beers/,207,0,1
+1747141482918,236,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,8,8,http://localhost:5000/beers/,236,0,1
+1747141482925,277,GET /beers,200,OK,10 Users x 100 Iterations 1-9,text,true,,3919,122,8,8,http://localhost:5000/beers/,277,0,1
+1747141483082,143,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,7,7,http://localhost:5000/beers/,143,0,1
+1747141483153,190,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,7,7,http://localhost:5000/beers/,190,0,0
+1747141482682,678,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-1,text,false,,29163,122,7,7,http://localhost:5000/beers/,678,0,1
+1747141483098,279,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,7,7,http://localhost:5000/beers/,278,0,0
+1747141483154,225,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,7,7,http://localhost:5000/beers/,225,0,1
+1747141483226,175,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,7,7,http://localhost:5000/beers/,175,0,0
+1747141482754,656,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,7,7,http://localhost:5000/beers/,656,0,1
+1747141482960,475,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,7,7,http://localhost:5000/beers/,475,0,0
+1747141483360,223,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,7,7,http://localhost:5000/beers/,223,0,0
+1747141483343,268,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,7,7,http://localhost:5000/beers/,268,0,1
+1747141483380,243,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,7,7,http://localhost:5000/beers/,243,0,0
+1747141483377,262,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,7,7,http://localhost:5000/beers/,262,0,0
+1747141483401,249,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,7,7,http://localhost:5000/beers/,249,0,1
+1747141483583,279,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,7,7,http://localhost:5000/beers/,279,0,1
+1747141483435,428,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-4,text,false,,29163,122,7,7,http://localhost:5000/beers/,428,0,1
+1747141483639,252,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,7,7,http://localhost:5000/beers/,252,0,1
+1747141483650,259,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,7,7,http://localhost:5000/beers/,259,0,1
+1747141483611,313,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,7,7,http://localhost:5000/beers/,313,0,1
+1747141483623,308,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,7,7,http://localhost:5000/beers/,307,0,1
+1747141483410,530,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,7,7,http://localhost:5000/beers/,530,0,0
+1747141483862,256,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,7,7,http://localhost:5000/beers/,256,0,1
+1747141483891,270,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,7,7,http://localhost:5000/beers/,270,0,1
+1747141483863,313,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,7,7,http://localhost:5000/beers/,312,0,1
+1747141483931,268,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,7,7,http://localhost:5000/beers/,268,0,0
+1747141483909,290,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,7,7,http://localhost:5000/beers/,290,0,1
+1747141484119,251,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,7,7,http://localhost:5000/beers/,251,0,0
+1747141484161,227,GET /beers,200,OK,10 Users x 100 Iterations 1-8,text,true,,3919,122,7,7,http://localhost:5000/beers/,227,0,1
+1747141484199,219,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,6,6,http://localhost:5000/beers/,219,0,1
+1747141484200,230,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,6,6,http://localhost:5000/beers/,230,0,0
+1747141484176,258,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,6,6,http://localhost:5000/beers/,258,0,1
+1747141483940,519,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-10,text,false,,29163,122,6,6,http://localhost:5000/beers/,519,0,1
+1747141483925,535,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,6,6,http://localhost:5000/beers/,535,0,0
+1747141484371,213,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,6,6,http://localhost:5000/beers/,213,0,0
+1747141484418,220,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,6,6,http://localhost:5000/beers/,220,0,0
+1747141484459,221,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,6,6,http://localhost:5000/beers/,221,0,0
+1747141484434,247,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,6,6,http://localhost:5000/beers/,247,0,1
+1747141484430,251,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,6,6,http://localhost:5000/beers/,251,0,1
+1747141484461,249,GET /beers,500,INTERNAL SERVER ERROR,10 Users x 100 Iterations 1-7,text,false,,29163,122,6,6,http://localhost:5000/beers/,249,0,0
+1747141484584,268,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,6,6,http://localhost:5000/beers/,268,0,1
+1747141484681,251,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,6,6,http://localhost:5000/beers/,250,0,0
+1747141484638,295,GET /beers,200,OK,10 Users x 100 Iterations 1-3,text,true,,3919,122,6,6,http://localhost:5000/beers/,295,0,1
+1747141484682,266,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,5,5,http://localhost:5000/beers/,266,0,0
+1747141484711,238,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,5,5,http://localhost:5000/beers/,238,0,0
+1747141484681,269,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,5,5,http://localhost:5000/beers/,268,0,1
+1747141484852,169,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,5,5,http://localhost:5000/beers/,169,0,1
+1747141485021,176,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,5,5,http://localhost:5000/beers/,176,0,1
+1747141484949,248,GET /beers,200,OK,10 Users x 100 Iterations 1-7,text,true,,3919,122,5,5,http://localhost:5000/beers/,248,0,1
+1747141484932,280,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,4,4,http://localhost:5000/beers/,280,0,0
+1747141484950,266,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,4,4,http://localhost:5000/beers/,266,0,0
+1747141484949,284,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,4,4,http://localhost:5000/beers/,284,0,0
+1747141485197,219,GET /beers,200,OK,10 Users x 100 Iterations 1-1,text,true,,3919,122,4,4,http://localhost:5000/beers/,219,0,1
+1747141485212,221,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,3,3,http://localhost:5000/beers/,221,0,1
+1747141485234,200,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,3,3,http://localhost:5000/beers/,200,0,0
+1747141485216,235,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,3,3,http://localhost:5000/beers/,235,0,0
+1747141485434,175,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,3,3,http://localhost:5000/beers/,175,0,0
+1747141485433,204,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,3,3,http://localhost:5000/beers/,204,0,1
+1747141485452,185,GET /beers,200,OK,10 Users x 100 Iterations 1-4,text,true,,3919,122,3,3,http://localhost:5000/beers/,185,0,0
+1747141485637,162,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,2,2,http://localhost:5000/beers/,162,0,0
+1747141485610,190,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,2,2,http://localhost:5000/beers/,190,0,0
+1747141485800,176,GET /beers,200,OK,10 Users x 100 Iterations 1-5,text,true,,3919,122,2,2,http://localhost:5000/beers/,176,0,1
+1747141485800,176,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,2,2,http://localhost:5000/beers/,176,0,1
+1747141485976,132,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,132,0,1
+1747141486108,155,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,155,0,1
+1747141486263,140,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,140,0,1
+1747141486404,121,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,121,0,0
+1747141486525,142,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,141,0,0
+1747141486667,127,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,126,0,0
+1747141486794,129,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,129,0,0
+1747141486923,130,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,129,0,0
+1747141487053,123,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,123,0,0
+1747141487176,129,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,129,0,0
+1747141487305,131,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,131,0,0
+1747141487436,136,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,136,0,0
+1747141487572,140,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,139,0,1
+1747141487712,130,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,130,0,0
+1747141487842,122,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,122,0,1
+1747141487964,132,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,132,0,1
+1747141488097,131,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,131,0,0
+1747141488228,133,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,133,0,1
+1747141488361,137,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,137,0,1
+1747141488498,123,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,123,0,1
+1747141488622,126,GET /beers,200,OK,10 Users x 100 Iterations 1-10,text,true,,3919,122,1,1,http://localhost:5000/beers/,125,0,0

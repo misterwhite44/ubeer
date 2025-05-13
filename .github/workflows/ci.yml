@@ -21,12 +21,13 @@ jobs:
       - name: Checkout backend repository
         uses: actions/checkout@v2
         with:
-          repository: misterwhite44/back_ubeers  # Répertoire du backend
+          repository: misterwhite44/back_ubeers  # Répertoire du backend (en utilisant GitHub Actions Checkout)
+          path: back_ubeers  # Le répertoire du backend cloné
 
       # Étape 3 : Installer les dépendances du backend
       - name: Install backend dependencies
         run: |
-          cd back_ubeers  # Répertoire du backend
+          cd back_ubeers  # Accède au répertoire du backend cloné
           python -m venv venv  # Crée un environnement virtuel
           source venv/bin/activate  # Active l'environnement virtuel
           pip install -r requirements.txt  # Installe les dépendances du backend
@@ -35,7 +36,7 @@ jobs:
       - name: Start Flask backend server
         run: |
           cd back_ubeers  # Répertoire du backend
-          nohup FLASK_APP=app.py FLASK_ENV=development flask run &  # Démarre Flask en arrière-plan
+          nohup FLASK_APP=app.py FLASK_ENV=development flask run --host=0.0.0.0 &  # Démarre Flask en arrière-plan
           sleep 10  # Attends que le serveur démarre
 
       # Étape 5 : Installer Node.js

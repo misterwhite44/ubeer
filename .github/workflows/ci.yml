@@ -37,6 +37,12 @@ jobs:
           nohup python3 app.py &  # Démarre Flask en arrière-plan avec python3
           sleep 10  # Attends que le serveur démarre
 
+      - name: Run Backend Unit Tests
+        run: |
+          cd back_ubeers  # Accède au répertoire du backend
+          python3 test_app.py  # Découvre et exécute tous les fichiers de test débutant par 'test_'
+
+
       # Étape 5 : Installer Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -60,8 +66,4 @@ jobs:
           npx playwright install  # Installer Playwright (si nécessaire)
           npx playwright test  # Exécuter les tests
 
-      # Étape 9 : Exécuter les tests unitaires du backend
-      - name: Run Backend Unit Tests
-        run: |
-          cd back_ubeers  # Accède au répertoire du backend
-          python3 -m unittest test_app.py  # Exécute les tests unitaires Flask
+      

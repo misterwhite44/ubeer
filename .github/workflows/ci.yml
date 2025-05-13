@@ -98,6 +98,11 @@ jobs:
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
 
+      - name: Run jmeter tests
+        run: |
+          cd ubeer  # Accède au répertoire du frontend
+          jmeter -n -t tests.jmx -l results.jtl
+
       # Étape 6 : Exécuter les tests Playwright
       - name: Run Playwright Tests
         run: |

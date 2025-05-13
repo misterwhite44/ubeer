@@ -98,6 +98,17 @@ jobs:
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
 
+      # Jmeter
+
+      - name: Install Apache JMeter
+        run: |
+          sudo apt update
+          sudo apt install -y openjdk-11-jre  # JMeter nécessite Java, donc on installe OpenJDK
+          wget https://dlcdn.apache.org/jmeter/binaries/apache-jmeter-5.4.1.tgz  # Télécharge la version de JMeter
+          tar -xvzf apache-jmeter-5.4.1.tgz  # Décompresse l'archive téléchargée
+          sudo mv apache-jmeter-5.4.1 /opt/jmeter  # Déplace dans le répertoire /opt
+          export PATH=$PATH:/opt/jmeter/bin  # Ajoute JMeter au PATH
+
       - name: Run jmeter tests
         run: |
           cd ubeer  # Accède au répertoire du frontend

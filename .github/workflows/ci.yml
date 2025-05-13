@@ -33,6 +33,7 @@ jobs:
           cd back_ubeers  # Répertoire du backend
           nohup python3 app.py &  # Démarre Flask en arrière-plan avec python3
           sleep 10  # Attends que le serveur démarre
+          tail -f nohup.out  # Maintient le processus en arrière-plan actif
 
       # Étape 4 : Exécuter les tests unitaires du backend
       - name: Run Backend Unit Tests

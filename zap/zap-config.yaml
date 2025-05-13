@@ -1,0 +1,14 @@
+target:
+  url: "http://example.com"
+  context:
+    name: "example-context"
+    include: ".*"
+    exclude: ""
+scan:
+  policy: "default"
+  rules:
+    - name: "Active Scan Rule"
+      type: "active"
+      enabled: true
+      threshold: "high"
+      attackStrength: "medium"

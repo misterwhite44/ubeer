@@ -58,6 +58,7 @@ jobs:
         with:
           repository: misterwhite44/front_ubeers  # Répertoire du frontend
           path: front_ubeers  # Le répertoire du frontend cloné
+          ref: main
 
       # Étape 2 : Installer Node.js
       - name: Setup Node.js

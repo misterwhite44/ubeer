@@ -74,13 +74,13 @@ jobs:
       # Étape 4 : Démarrer l'application frontend en arrière-plan
       - name: Start the frontend application
         run: |
-          cd front_ubeers  # Répertoire du frontend
+          cd ubeer  # Répertoire du frontend
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
 
       # Étape 5 : Exécuter les tests Playwright
       - name: Run Playwright Tests
         run: |
-          cd front_ubeers  # Accède au répertoire du frontend
+          cd ubeer  # Accède au répertoire du frontend
           npx playwright install  # Installer Playwright (si nécessaire)
           npx playwright test  # Exécuter les tests Playwright

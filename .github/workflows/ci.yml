@@ -28,15 +28,13 @@ jobs:
       - name: Install backend dependencies
         run: |
           cd back_ubeers  # Accède au répertoire du backend cloné
-          python -m venv venv  # Crée un environnement virtuel
-          source venv/bin/activate  # Active l'environnement virtuel
-          pip install -r requirements.txt  # Installe les dépendances du backend
+          pip install -r requirements.txt  # Installe les dépendances du backend si nécessaire
 
       # Étape 4 : Démarrer le serveur Flask en arrière-plan
       - name: Start Flask backend server
         run: |
           cd back_ubeers  # Répertoire du backend
-          nohup FLASK_APP=app.py FLASK_ENV=development flask run --host=0.0.0.0 &  # Démarre Flask en arrière-plan
+          nohup python3 app.py &  # Démarre Flask en arrière-plan avec python3
           sleep 10  # Attends que le serveur démarre
 
       # Étape 5 : Installer Node.js

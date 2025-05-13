@@ -100,7 +100,7 @@ jobs:
 
       # Jmeter
 
-      - name: Install Apache JMeter
+      - name: Install and launch JMeter tests
         run: |
           sudo apt update
           sudo apt install -y openjdk-11-jre  # JMeter nécessite Java, donc on installe OpenJDK
@@ -110,9 +110,6 @@ jobs:
           export PATH=$PATH:/opt/jmeter/bin  # Ajoute JMeter au PATH
           export PATH=$JMETER_HOME/bin:$PATH
           echo "export PATH=$JMETER_HOME/bin:\$PATH" >> $GITHUB_ENV  # Rendre PATH dispo dans les étapes suivantes
-
-      - name: Run jmeter tests
-        run: |
           cd ubeer  # Accède au répertoire du frontend
           jmeter -n -t tests.jmx -l results.jtl
 

@@ -42,7 +42,7 @@ jobs:
       - name: Run Backend Integration Tests
         run: |
           cd back_ubeers  # Accède au répertoire du backend
-          python3 test_integration.py  # Exécute les tests d'intégration du backend
+          pytest -s test_integration.py  # Exécute les tests d'intégration du backend
       
 
   frontend-tests:

@@ -8,4 +8,6 @@ test('Parcours de commande depuis le panier', async ({ page }) => {
 
   await expect(page).toHaveURL(/.*order/);
   await expect(page.getByRole('heading', { level: 1, name: 'Passer une commande' })).toBeVisible();
+
+  console.log('Test E2E réussi : parcours de commande depuis le panier');
 });

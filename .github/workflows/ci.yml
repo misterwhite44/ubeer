@@ -89,20 +89,14 @@ jobs:
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
 
-      - name: Run OWASP ZAP Full Scan on /breweries
+      - name: Run OWASP ZAP Security Scan
         run: |
-          docker run --network=host -t ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py \
-            -t http://localhost:5000/breweries/ \
-            -r zap-breweries-report.html \
-            -J zap-output.json \
-            -w zap-warnings.md \
-            -I \
-            -z "-config api.disablekey=true"
-          
-          echo "------ ZAP Scan HTML Report (summary only) ------"
-          cat zap-warnings.md || echo "No warnings generated"
-          echo "-------------------------------------------------"
-          echo "Full HTML report is available as zap-breweries-report.html"
+          docker run --rm \
+            --volume ${{ github.workspace }}:/zap/wrk/:rw \
+            ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py \
+              -t http://host.docker.internal:5000/breweries/ \
+              -r zap-breweries-report.html
+
 
 
       # Jmeter

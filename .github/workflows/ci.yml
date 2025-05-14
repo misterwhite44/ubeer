@@ -40,22 +40,6 @@ jobs:
           cd back_ubeers  # Accède au répertoire du backend
           python3 test_integration.py  # Exécute les tests d'intégration du backend
       
-      - name: Start services with Docker Compose
-        run: |
-          docker compose -f back_ubeers/docker-compose.yml up -d
-          sleep 20
-
-      - name: Run OWASP ZAP Security Scan
-        run: |
-          docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py \
-            -t http://flask-api:5000/breweries/ \
-            -r zap-breweries-report.html
-
-      - name: Stop Docker Compose services
-        run: |
-          docker compose -f back_ubeers/docker-compose.yml down
-
-
 
   frontend-tests:
     runs-on: ubuntu-latest

@@ -28,6 +28,10 @@ jobs:
         run:
           pip install pytest
 
+      - name: Install logging
+        run:
+          pip install logging
+
       - name: Start Flask backend server
         run: |
           cd back_ubeers  # Répertoire du backend

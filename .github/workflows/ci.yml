@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  
+  pull_request:
     branches:
       - main
 
@@ -15,7 +16,7 @@ jobs:
       - name: Checkout backend repository
         uses: actions/checkout@v2
         with:
-          repository: misterwhite44/back_ubeers  
+          repository: misterwhite44/back_ubeers 
           path: back_ubeers  
 
       - name: Install backend dependencies
@@ -47,7 +48,7 @@ jobs:
       - name: Checkout frontend repository
         uses: actions/checkout@v2
         with:
-          repository: misterwhite44/ubeer 
+          repository: misterwhite44/ubeer  
           path: ubeer  
 
       - name: Setup Node.js
@@ -63,7 +64,7 @@ jobs:
       - name: Checkout backend repository
         uses: actions/checkout@v2
         with:
-          repository: misterwhite44/back_ubeers  
+          repository: misterwhite44/back_ubeers 
           path: back_ubeers  
 
       - name: Install backend dependencies
@@ -83,6 +84,7 @@ jobs:
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
 
+      # Jmeter
 
       - name: Install and launch JMeter tests
         run: |

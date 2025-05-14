@@ -24,6 +24,10 @@ jobs:
           cd back_ubeers  # Accède au répertoire du backend cloné
           pip install -r requirements.txt  # Installe les dépendances du backend si nécessaire
 
+      - name: Install Pytest
+        run:
+          pip install pytest
+
       - name: Start Flask backend server
         run: |
           cd back_ubeers  # Répertoire du backend

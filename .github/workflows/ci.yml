@@ -89,16 +89,6 @@ jobs:
           nohup npm start &  # Démarre l'application frontend en arrière-plan
           sleep 10  # Attends que le serveur frontend démarre
 
-      - name: Run OWASP ZAP Security Scan
-        run: |
-          docker run --rm \
-            --volume ${{ github.workspace }}:/zap/wrk/:rw \
-            ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py \
-              -t http://host.docker.internal:5000/breweries/ \
-              -r zap-breweries-report.html
-
-
-
       # Jmeter
 
       - name: Install and launch JMeter tests
@@ -119,3 +109,11 @@ jobs:
           cd ubeer  # Accède au répertoire du frontend
           npx playwright install  # Installer Playwright (si nécessaire)
           npx playwright test  # Exécuter les tests Playwright
+
+    # - name: Run OWASP ZAP Security Scan
+#        run: |
+#     docker run --rm \
+#       --volume ${{ github.workspace }}:/zap/wrk/:rw \
+#       ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py \
+#         -t http://host.docker.internal:5000/breweries/ \
+#         -r zap-breweries-report.html

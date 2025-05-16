@@ -1,5 +1,9 @@
 # Rémi jegard - Louis Boucard
 
+# URl de lancement = https://back-ubeers.onrender.com
+
+Utilisation d'une BDD Redis
+
 
 
 # Getting Started with Create React App

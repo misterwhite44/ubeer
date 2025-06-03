@@ -79,7 +79,7 @@ function Catalogue() {
   // Fonction pour supprimer une bière
   const handleDeleteBeer = async (beerId) => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/beers/${beerId}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/beers/${beerId}`, {
         method: "DELETE",
       });
 
@@ -99,7 +99,7 @@ function Catalogue() {
     e.preventDefault();
 
     //const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
-    const url = editBeer ? `http://localhost:5000/beers/${editBeer.id}` : "http://localhost:5000/beers/";
+    const url = editBeer ? `${process.env.REACT_APP_API_URL_LOCAL}/beers/${editBeer.id}` : "${process.env.REACT_APP_API_URL_LOCAL}/beers/";
     const method = editBeer ? "PUT" : "POST";
 
     try {

@@ -7,7 +7,6 @@ import Footer from "./footer";
 import Catalogue from "./catalogue";
 import Breweries from "./breweries";
 import Login from "./login";
-import Register from "./register";
 import Home from "./home";
 import Panier from "./cart";
 import Order from "./order";
@@ -25,7 +24,6 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/breweries" element={<Breweries />} />
-          <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Panier />} />
           <Route path="/order" element={<Order />} />

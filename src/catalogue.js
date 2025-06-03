@@ -26,8 +26,9 @@ function Catalogue() {
       try {
         //const beerResponse = await fetch("https://back-ubeers.onrender.com/beers/");
         //const breweryResponse = await fetch("https://back-ubeers.onrender.com/breweries/");
-        const beerResponse = await fetch("http://localhost:5000/beers/");
-        const breweryResponse = await fetch("http://localhost:5000/breweries/");
+        const beerResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/beers/`);
+        const breweryResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/breweries/`);
+
 
         if (!beerResponse.ok || !breweryResponse.ok) {
           throw new Error("Erreur lors du chargement des données.");

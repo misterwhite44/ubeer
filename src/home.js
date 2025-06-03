@@ -1,7 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Ajoutez cette ligne
+import { Link } from "react-router-dom";
 import LoginButton from "./login";
 import LogoutButton from "./logout";
+
+const triggerError = () => {
+  throw new Error("This is a Sentry error!");
+};
 
 function Home() {
   return (
@@ -13,9 +17,12 @@ function Home() {
           Profitez d'une sélection de bières artisanales livrées directement chez vous,
           rapidement et facilement.
         </p>
-        <Link to="/catalogue">
-          <button className="cta-button">Commandez Maintenant</button>
-        </Link>
+
+        {/* ✅ Bouton de test Sentry */}
+        <button onClick={triggerError}>Break the world</button>
+
+        {/* Exemple de navigation */}
+        <Link to="/catalogue">Voir le catalogue</Link>
       </section>
 
       {/* About Section */}

@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
+    "@sentry/cli": "^2.46.0",
+    "@sentry/react": "^9.24.0",
+    "@sentry/tracing": "^7.120.3",
     "axios": "^1.9.0",
     "cra-template": "1.2.0",
     "react": "^18.0.0",
@@ -16,11 +19,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run sentry:sourcemaps",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org jegard-remi --project javascript-react ./build && sentry-cli sourcemaps upload --org jegard-remi --project javascript-react ./build"
   },
   "eslintConfig": {
     "extends": [

@@ -12,15 +12,16 @@ import Panier from "./cart";
 import Order from "./order";
 import Profile from "./userProfile";
 
-
 function App() {
+ 
+
   return (
     <Router>
       <div className="app">
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home />} /> 
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/breweries" element={<Breweries />} />
@@ -28,7 +29,6 @@ function App() {
           <Route path="/cart" element={<Panier />} />
           <Route path="/order" element={<Order />} />
           <Route path="/userProfile" element={<Profile />} />
-
         </Routes>
 
         <Footer />

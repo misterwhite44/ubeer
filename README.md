@@ -1,6 +1,6 @@
 # Rémi jegard - Louis Boucard
 
-# URl de lancement = https://back-ubeers.onrender.com
+# URl de lancement = https://ubeer-jade.vercel.app
 
 Utilisation d'une BDD Redis
 

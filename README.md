@@ -2,8 +2,8 @@
 
 # URl de lancement = https://ubeer-jade.vercel.app
 
-Utilisation d'une BDD Redis
-
+Utilisation d'une BDD NoSQL Redis
+Utilisation d'un service Externe de gestion d'erreurs Sentry
 
 
 # Getting Started with Create React App

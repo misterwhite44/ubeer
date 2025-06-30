@@ -5,7 +5,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@sentry/cli": "^2.46.0",
-    "@sentry/react": "^9.24.0",
+    "@sentry/react": "^7.120.3",
     "@sentry/tracing": "^7.120.3",
     "axios": "^1.9.0",
     "cra-template": "1.2.0",

@@ -1,84 +1,84 @@
-2025-06-30 14:11:11,363 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2025-06-30 14:11:11,377 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
-2025-06-30 14:11:11,377 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
-2025-06-30 14:11:11,380 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: Version 5.6.3
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: java.version=21.0.7
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: os.name=Mac OS X
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: os.arch=aarch64
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: os.version=15.5
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: file.encoding=UTF-8
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: java.awt.headless=true
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: Max memory     =1073741824
-2025-06-30 14:11:11,381 INFO o.a.j.JMeter: Available Processors =8
-2025-06-30 14:11:11,387 INFO o.a.j.JMeter: Default Locale=English (EN)
-2025-06-30 14:11:11,387 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2025-06-30 14:11:11,387 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
-2025-06-30 14:11:11,388 INFO o.a.j.JMeter: user.dir  =/Users/louisboucard/Documents/ubeer
-2025-06-30 14:11:11,388 INFO o.a.j.JMeter: PWD       =/Users/louisboucard/Documents/ubeer
-2025-06-30 14:11:11,389 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: MacBook-Air-de-Louis.local FullName: localhost
-2025-06-30 14:11:11,398 INFO o.a.j.s.FileServer: Default base='/Users/louisboucard/Documents/ubeer'
-2025-06-30 14:11:11,400 INFO o.a.j.s.FileServer: Set new base='/Users/louisboucard/Documents/ubeer/tests/jmeter'
-2025-06-30 14:11:11,504 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2025-06-30 14:11:11,530 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2025-06-30 14:11:11,532 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2025-06-30 14:11:11,533 INFO o.a.j.s.SaveService: Loading file: tests/jmeter/test_beers_load.jmx
-2025-06-30 14:11:11,570 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-06-30 14:11:11,570 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-06-30 14:11:11,571 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-06-30 14:11:11,571 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-06-30 14:11:11,571 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2025-06-30 14:11:11,571 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2025-06-30 14:11:11,576 INFO o.a.j.JMeter: Creating summariser <summary>
-2025-06-30 14:11:11,589 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2025-06-30 14:11:11,589 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2025-06-30 14:11:11,590 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2025-06-30 14:11:11,592 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2025-06-30 14:11:11,592 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2025-06-30 14:11:11,631 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-06-30 14:11:11,681 INFO o.a.j.JMeter: Running test (1751285471681)
-2025-06-30 14:11:11,691 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 10 Users x 100 Iterations
-2025-06-30 14:11:11,691 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group 10 Users x 100 Iterations.
-2025-06-30 14:11:11,691 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-06-30 14:11:11,691 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=1 delayedStart=false
-2025-06-30 14:11:11,696 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2025-06-30 14:11:11,696 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2025-06-30 14:11:11,696 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-1
-2025-06-30 14:11:11,709 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = MacBook-Air-de-Louis.local
-2025-06-30 14:11:11,713 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2025-06-30 14:11:11,713 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2025-06-30 14:11:11,713 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
-2025-06-30 14:11:11,713 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2025-06-30 14:11:11,713 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2025-06-30 14:11:11,799 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-2
-2025-06-30 14:11:11,896 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-3
-2025-06-30 14:11:11,999 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-4
-2025-06-30 14:11:12,095 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-5
-2025-06-30 14:11:12,196 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-6
-2025-06-30 14:11:12,298 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-7
-2025-06-30 14:11:12,394 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-8
-2025-06-30 14:11:12,498 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-9
-2025-06-30 14:11:12,593 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-10
-2025-06-30 14:11:21,407 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-3
-2025-06-30 14:11:21,408 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-3
-2025-06-30 14:11:21,410 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-4
-2025-06-30 14:11:21,410 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-4
-2025-06-30 14:11:21,738 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-9
-2025-06-30 14:11:21,739 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-9
-2025-06-30 14:11:21,888 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-10
-2025-06-30 14:11:21,889 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-10
-2025-06-30 14:11:22,632 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-5
-2025-06-30 14:11:22,632 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-5
-2025-06-30 14:11:22,693 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-7
-2025-06-30 14:11:22,693 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-7
-2025-06-30 14:11:22,785 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-1
-2025-06-30 14:11:22,785 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-1
-2025-06-30 14:11:22,795 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-2
-2025-06-30 14:11:22,795 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-2
-2025-06-30 14:11:22,934 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-8
-2025-06-30 14:11:22,934 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-8
-2025-06-30 14:11:23,381 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-6
-2025-06-30 14:11:23,381 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-6
-2025-06-30 14:11:23,382 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2025-06-30 14:11:23,385 INFO o.a.j.r.Summariser: summary =   2000 in 00:00:12 =  170.9/s Avg:    50 Min:     1 Max:   887 Err:   304 (15.20%)
+2025-06-30 14:47:13,669 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-06-30 14:47:13,683 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2025-06-30 14:47:13,683 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2025-06-30 14:47:13,686 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: Version 5.6.3
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: java.version=21.0.7
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: os.name=Mac OS X
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: os.arch=aarch64
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: os.version=15.5
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: java.awt.headless=true
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-06-30 14:47:13,687 INFO o.a.j.JMeter: Available Processors =8
+2025-06-30 14:47:13,693 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-06-30 14:47:13,693 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-06-30 14:47:13,693 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2025-06-30 14:47:13,693 INFO o.a.j.JMeter: user.dir  =/Users/louisboucard/Documents/ubeer
+2025-06-30 14:47:13,694 INFO o.a.j.JMeter: PWD       =/Users/louisboucard/Documents/ubeer
+2025-06-30 14:47:13,696 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: MacBook-Air-de-Louis.local FullName: localhost
+2025-06-30 14:47:13,704 INFO o.a.j.s.FileServer: Default base='/Users/louisboucard/Documents/ubeer'
+2025-06-30 14:47:13,705 INFO o.a.j.s.FileServer: Set new base='/Users/louisboucard/Documents/ubeer/tests/jmeter'
+2025-06-30 14:47:13,800 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-06-30 14:47:13,826 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-06-30 14:47:13,828 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-06-30 14:47:13,829 INFO o.a.j.s.SaveService: Loading file: tests/jmeter/test_beers_load.jmx
+2025-06-30 14:47:13,866 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-30 14:47:13,866 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-30 14:47:13,866 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-30 14:47:13,866 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-30 14:47:13,866 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-06-30 14:47:13,866 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-06-30 14:47:13,871 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-06-30 14:47:13,884 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-06-30 14:47:13,885 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-06-30 14:47:13,885 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-06-30 14:47:13,887 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-06-30 14:47:13,887 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-06-30 14:47:13,919 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-30 14:47:13,971 INFO o.a.j.JMeter: Running test (1751287633971)
+2025-06-30 14:47:13,980 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 10 Users x 100 Iterations
+2025-06-30 14:47:13,981 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group 10 Users x 100 Iterations.
+2025-06-30 14:47:13,981 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-06-30 14:47:13,981 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=1 delayedStart=false
+2025-06-30 14:47:13,984 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-1
+2025-06-30 14:47:13,985 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-06-30 14:47:13,985 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-06-30 14:47:13,994 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = MacBook-Air-de-Louis.local
+2025-06-30 14:47:13,997 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-06-30 14:47:13,998 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-06-30 14:47:13,998 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-06-30 14:47:13,998 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-06-30 14:47:13,998 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-06-30 14:47:14,083 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-2
+2025-06-30 14:47:14,186 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-3
+2025-06-30 14:47:14,285 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-4
+2025-06-30 14:47:14,383 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-5
+2025-06-30 14:47:14,489 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-6
+2025-06-30 14:47:14,586 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-7
+2025-06-30 14:47:14,687 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-8
+2025-06-30 14:47:14,783 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-9
+2025-06-30 14:47:14,882 INFO o.a.j.t.JMeterThread: Thread started: 10 Users x 100 Iterations 1-10
+2025-06-30 14:47:16,337 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-1
+2025-06-30 14:47:16,337 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-1
+2025-06-30 14:47:16,420 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-2
+2025-06-30 14:47:16,420 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-2
+2025-06-30 14:47:16,772 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-3
+2025-06-30 14:47:16,773 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-3
+2025-06-30 14:47:16,939 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-4
+2025-06-30 14:47:16,939 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-4
+2025-06-30 14:47:17,098 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-5
+2025-06-30 14:47:17,099 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-5
+2025-06-30 14:47:17,144 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-7
+2025-06-30 14:47:17,144 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-7
+2025-06-30 14:47:17,147 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-6
+2025-06-30 14:47:17,147 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-6
+2025-06-30 14:47:17,200 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-8
+2025-06-30 14:47:17,200 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-8
+2025-06-30 14:47:17,295 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-9
+2025-06-30 14:47:17,295 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-9
+2025-06-30 14:47:17,310 INFO o.a.j.t.JMeterThread: Thread is done: 10 Users x 100 Iterations 1-10
+2025-06-30 14:47:17,310 INFO o.a.j.t.JMeterThread: Thread finished: 10 Users x 100 Iterations 1-10
+2025-06-30 14:47:17,311 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-06-30 14:47:17,314 INFO o.a.j.r.Summariser: summary =   2000 in 00:00:03 =  598.6/s Avg:    12 Min:     1 Max:    78 Err:     0 (0.00%)

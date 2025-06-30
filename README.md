@@ -10,6 +10,10 @@ Utilisation d'un service Externe de gestion d'erreurs Sentry
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Pour lancer le test JMeter
+
+jmeter -n -t tests/jmeter/test_beers_load.jmx -l results.jtl
+
 ## Available Scripts
 
 In the project directory, you can run: e

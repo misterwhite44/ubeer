@@ -26,7 +26,8 @@ function Catalogue() {
       try {
         const beerResponse = await fetch(`${process.env.REACT_APP_API_URL_PROD}/beers/`);
         const breweryResponse = await fetch(`${process.env.REACT_APP_API_URL_PROD}/breweries/`);
-
+        //const beerResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/beers/`);
+        //const breweryResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/breweries/`);
 
         if (!beerResponse.ok || !breweryResponse.ok) {
           throw new Error("Erreur lors du chargement des données.");

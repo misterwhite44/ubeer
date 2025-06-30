@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./css/breweries.css";
 import { FiPlus } from "react-icons/fi";
 
-const BASE_URL = 'https://back-ubeers.onrender.com';
+const BASE_URL = process.env.REACT_APP_API_URL_PROD;
 
 function Breweries() {
   const [breweries, setBreweries] = useState([]);

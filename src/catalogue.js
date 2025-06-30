@@ -97,7 +97,6 @@ function Catalogue() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    //const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
     const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
     const method = editBeer ? "PUT" : "POST";
 

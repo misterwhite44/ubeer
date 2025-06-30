@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Navigation et affichage du panier', async ({ page }) => {
-  await page.goto('http://localhost:3000/catalogue');
+  await page.goto('https://ubeer-jade.vercel.app/catalogue');
   const cartIcon = page.locator('.cart-logo a');
   await cartIcon.click();
 

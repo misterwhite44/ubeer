@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
 
 test('Ajout au panier depuis le catalogue', async ({ page }) => {
-  await page.goto('http://localhost:3000/catalogue');
+  await page.goto('https://ubeer-jade.vercel.app/catalogue');
   const addButtons = page.locator('button:has-text("Ajouter au panier")');
   await expect(addButtons.first()).toBeVisible();
   await addButtons.first().click();
 
-  await page.goto('http://localhost:3000/cart');
+  await page.goto('https://ubeer-jade.vercel.app/cart');
   const cartItem = page.locator('.cart-item h2');
   await expect(cartItem).toBeVisible();
 

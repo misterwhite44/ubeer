@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Home page - vérifier les éléments principaux', async ({ page }) => {
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://ubeer-jade.vercel.app/');
 
   const heroTitle = await page.getByRole('heading', { level: 2 });
   await expect(heroTitle).toHaveText('Livraison de bière à domicile en un clic !');

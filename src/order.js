@@ -16,7 +16,7 @@ function Orders() {
 
     //recupere l'url de la variable d'environnement
     //fetch("REACT_APP_API_URL_PROD/users/")
-    fetch("https://back-ubeers.onrender.com/users/")
+    fetch("https://ubeer-jade.vercel.app")
 
       .then((response) => response.json())
       .then((data) => {

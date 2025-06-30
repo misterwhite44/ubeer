@@ -7,7 +7,7 @@ export default defineConfig({
     timeout: 20000
   },
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://ubeer-jade.vercel.app',
     headless: true,
     ignoreHTTPSErrors: true
   }

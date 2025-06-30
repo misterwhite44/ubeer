@@ -19,7 +19,7 @@ const BASE_URL = process.env.REACT_APP_API_URL_PROD;
 
 
 
-    fetch(`${BASE_URL}/users/`) // Remplacez par l'URL de votre API pour récupérer les utilisateurs
+    fetch(`${BASE_URL}`)
 
       .then((response) => response.json())
       .then((data) => {

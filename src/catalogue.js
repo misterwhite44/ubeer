@@ -24,8 +24,8 @@ function Catalogue() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const beerResponse = await fetch(`${process.env.REACT_APP_API_URL_PROD}/beers/`);
-        const breweryResponse = await fetch(`${process.env.REACT_APP_API_URL_PROD}/breweries/`);
+        const beerResponse = await fetch(`https://back-ubeers.onrender.com/beers/`);
+        const breweryResponse = await fetch(`https://back-ubeers.onrender.com/breweries/`);
         //const beerResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/beers/`);
         //const breweryResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/breweries/`);
 
@@ -98,7 +98,7 @@ function Catalogue() {
     e.preventDefault();
 
     //const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
-    const url = editBeer ? `${process.env.REACT_APP_API_URL_PROD}/beers/${editBeer.id}` : "${process.env.REACT_APP_API_URL_PROD}/beers/";
+    const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
     const method = editBeer ? "PUT" : "POST";
 
     try {

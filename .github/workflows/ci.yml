@@ -12,20 +12,6 @@ jobs:
   backend-tests:
     runs-on: ubuntu-latest
 
-    services:
-      redis:
-        image: redis
-        ports:
-          - 6379:6379
-        options: >-
-          --health-cmd "redis-cli ping"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-
-    env:
-      REDIS_URL: redis://localhost:6379/0
-
     steps:
       - name: Checkout backend repository
         uses: actions/checkout@v2
@@ -37,25 +23,23 @@ jobs:
         run: |
           cd back_ubeers
           pip install -r requirements.txt
-
-      - name: Install Pytest
-        run: pip install pytest
-
-      - name: Start Flask backend server
-        run: |
-          cd back_ubeers
-          nohup python3 app.py &  
-          sleep 10  
+          pip install pytest
 
       - name: Run Backend Unit Tests
         run: |
           cd back_ubeers
-          python3 test_app.py  
+          python3 test_app.py
+        env:
+          API_URL: https://back-ubeers.onrender.com
+          REDIS_DISABLED: "true"
 
       - name: Run Backend Integration Tests
         run: |
           cd back_ubeers
-          pytest -s test_integration.py  
+          pytest -s test_integration.py
+        env:
+          API_URL: https://back-ubeers.onrender.com
+          REDIS_DISABLED: "true"
 
   frontend-tests:
     runs-on: ubuntu-latest
@@ -76,24 +60,7 @@ jobs:
       - name: Install frontend dependencies
         run: |
           cd ubeer
-          npm install  
-
-      - name: Checkout backend repository
-        uses: actions/checkout@v2
-        with:
-          repository: misterwhite44/back_ubeers
-          path: back_ubeers
-
-      - name: Install backend dependencies
-        run: |
-          cd back_ubeers
-          pip install -r requirements.txt  
-
-      - name: Start Flask backend server
-        run: |
-          cd back_ubeers
-          nohup python3 app.py &  
-          sleep 10  
+          npm install
 
       - name: Build Frontend Application
         run: |
@@ -106,7 +73,7 @@ jobs:
         run: |
           cd ubeer
           nohup npm start &  
-          sleep 10  
+          sleep 10
 
       - name: Install and launch JMeter tests
         run: |
@@ -116,13 +83,20 @@ jobs:
           tar -xvzf apache-jmeter-5.6.3.tgz
           sudo mv apache-jmeter-5.6.3 /opt/jmeter
           export PATH=$PATH:/opt/jmeter/bin
-          export PATH=$JMETER_HOME/bin:$PATH
-          echo "export PATH=$JMETER_HOME/bin:\$PATH" >> $GITHUB_ENV
           cd ubeer
           jmeter -n -t tests/jmeter/test_beers_load.jmx -l results.jtl
 
       - name: Run Playwright Tests
         run: |
           cd ubeer
-          npx playwright install  
-          npx playwright test  
+          npx playwright install
+          npx playwright test
+
+# Optional: Reactivate OWASP ZAP later if needed.
+#      - name: Run OWASP ZAP Security Scan
+#        run: |
+#          docker run --rm \
+#            --volume ${{ github.workspace }}:/zap/wrk/:rw \
+#            ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py \
+#              -t https://back-ubeers.onrender.com/breweries/ \
+#              -r zap-breweries-report.html

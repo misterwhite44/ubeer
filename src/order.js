@@ -15,9 +15,9 @@ function Orders() {
     setCartItems(storedCart);
 
     //fetch("https://back-ubeers.onrender.com/users/")
-    fetch("http://localhost:5000/users/")
+    //fetch("http://localhost:5000/users/")
     //recupere l'url de la variable d'environnement
-    fetch("REACT_APP_API_URL_LOCAL/users/")
+    fetch("REACT_APP_API_URL_PROD/users/")
 
       .then((response) => response.json())
       .then((data) => {

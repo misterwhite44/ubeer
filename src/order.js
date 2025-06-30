@@ -14,9 +14,12 @@ function Orders() {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(storedCart);
 
-    //recupere l'url de la variable d'environnement
-    //fetch("REACT_APP_API_URL_PROD/users/")
-    fetch("https://ubeer-jade.vercel.app")
+    
+  const API_URL = process.env.REACT_APP_API_URL_PROD;
+
+
+
+    fetch('${API_URL}')
 
       .then((response) => response.json())
       .then((data) => {
@@ -77,7 +80,7 @@ function Orders() {
 
       try {
         //const response = await fetch("https://back-ubeers.onrender.com/deliveries/", {
-        const response = await fetch("https://back-ubeers.onrender.com/deliveries/", {
+        const response = await fetch(`${API_URL}/deliveries/`, {
 
           method: "POST",
           headers: {

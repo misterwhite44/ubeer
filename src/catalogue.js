@@ -20,12 +20,15 @@ function Catalogue() {
   });
   const [editBeer, setEditBeer] = useState(null);
 
-  // Charger les bières et les brasseries depuis l'API
+  const API_URL = process.env.REACT_APP_API_URL_PROD;
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const beerResponse = await fetch(`https://back-ubeers.onrender.com/beers/`);
-        const breweryResponse = await fetch(`https://back-ubeers.onrender.com/breweries/`);
+        const beerResponse = await fetch(`${API_URL}/beers/`);
+        const breweryResponse = await fetch(`${API_URL}/breweries/`);
+
         //const beerResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/beers/`);
         //const breweryResponse = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/breweries/`);
 
@@ -78,7 +81,7 @@ function Catalogue() {
   // Fonction pour supprimer une bière
   const handleDeleteBeer = async (beerId) => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL_PROD}/beers/${beerId}`, {
+      const response = await fetch(`${API_URL}/beers/${beerId}`, {
         method: "DELETE",
       });
 
@@ -97,7 +100,7 @@ function Catalogue() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    const url = editBeer ? `https://back-ubeers.onrender.com/beers/${editBeer.id}` : "https://back-ubeers.onrender.com/beers/";
+    const url = editBeer ? `${API_URL}/beers/${editBeer.id}` : `${API_URL}/beers/`;
     const method = editBeer ? "PUT" : "POST";
 
     try {

@@ -15,11 +15,11 @@ function Orders() {
     setCartItems(storedCart);
 
     
-  const API_URL = process.env.REACT_APP_API_URL_PROD;
+const BASE_URL = process.env.REACT_APP_API_URL_PROD;
 
 
 
-    fetch(`${API_URL}`)
+    fetch(`${BASE_URL}`)
 
       .then((response) => response.json())
       .then((data) => {
@@ -79,8 +79,7 @@ function Orders() {
       };
 
       try {
-        //const response = await fetch("https://back-ubeers.onrender.com/deliveries/", {
-        const response = await fetch(`${API_URL}/deliveries/`, {
+        const response = await fetch(`${BASE_URL}/deliveries/`, {
 
           method: "POST",
           headers: {

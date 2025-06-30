@@ -20,14 +20,14 @@ function Catalogue() {
   });
   const [editBeer, setEditBeer] = useState(null);
 
-  const API_URL = process.env.REACT_APP_API_URL_PROD;
+const BASE_URL = process.env.REACT_APP_API_URL_PROD;
 
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const beerResponse = await fetch(`${API_URL}/beers/`);
-        const breweryResponse = await fetch(`${API_URL}/breweries/`);
+        const beerResponse = await fetch(`${BASE_URL}/beers/`);
+        const breweryResponse = await fetch(`${BASE_URL}/breweries/`);
 
         if (!beerResponse.ok || !breweryResponse.ok) {
           throw new Error("Erreur lors du chargement des données.");
@@ -78,7 +78,7 @@ function Catalogue() {
   // Fonction pour supprimer une bière
   const handleDeleteBeer = async (beerId) => {
     try {
-      const response = await fetch(`${API_URL}/beers/${beerId}`, {
+      const response = await fetch(`${BASE_URL}/beers/${beerId}`, {
         method: "DELETE",
       });
 
@@ -97,7 +97,7 @@ function Catalogue() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    const url = editBeer ? `${API_URL}/beers/${editBeer.id}` : `${API_URL}/beers/`;
+    const url = editBeer ? `${BASE_URL}/beers/${editBeer.id}` : `${BASE_URL}/beers/`;
     const method = editBeer ? "PUT" : "POST";
 
     try {

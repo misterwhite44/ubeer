@@ -78,7 +78,7 @@ function Catalogue() {
   // Fonction pour supprimer une bière
   const handleDeleteBeer = async (beerId) => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL_LOCAL}/beers/${beerId}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL_PROD}/beers/${beerId}`, {
         method: "DELETE",
       });
 
